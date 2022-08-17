@@ -1,0 +1,38 @@
+@model Activity
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+
+        @foreach (Activity a in ViewBag.OneBusiness.UsersWorkedWith)
+        {
+            <div>
+                <p>@a.ActivityType</p>
+                <p>@a.Notes</p>
+            </div>
+        }
+        <form asp-controller="CRM" asp-action="AddActivity" asp-route-businessId="@ViewBag.OneBusiness" method="POST">
+            <div>
+                <label asp-for="ActivityType" class="form-label"></label>
+                <span asp-validation-for="ActivityType" style="color: red; font-weight: bold;"></span>
+                <select asp-for="ActivityType">
+                    <option value="Phone Call">Phone Call</option>
+                    <option value="Email">Email</option>
+                    <option value="Presentation">Presentation</option>
+                </select>
+            </div>
+            <div>
+                <label asp-for="Notes" class="form-label"></label>
+                <span asp-validation-for="Notes" style="color: red; font-weight: bold;"></span>
+                <input asp-for="Notes" class="form-control">
+            </div>
+            <button type="submit">Add Activity</button>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MyCRM - @ViewBag.OneBusiness.BusinessName</title>
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/MeetUpCenter.styles.css" asp-append-version="true" />
+    </head>
+    <body>
+        <div style="display: flex; align-items: center; justify-content: space-between;">
+            <h1>@ViewBag.OneBusiness.BusinessName</h1>
+            <div style="display: flex; align-items: center;">
+                <a asp-controller="CRM" asp-action="Dashboard" class="btn btn-outline-primary">Dashboard</a>
+                <a asp-controller="User" asp-action="Logout" class="btn btn-outline-danger">Log Out</a>
+            </div>
+        </div>
+
+        <partial name="_ClientActivity"></partial>
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+    </body>
+</html>
