@@ -53,17 +53,37 @@ public class CRMController : Controller
         {
             return RedirectToAction("Home", "User");
         }
-        return View("NewBusiness");
+        return View("NewBusinessForm");
     }
 
 
     [HttpPost("/business/create")]
-    public IActionResult CreateBusiness(Business business, Address address)
+    public IActionResult CreateBusiness(NewBusinessForm newBusiness)
     {
         if(ModelState.IsValid == false)
         {
             return NewBusiness();
         }
+
+        Business business = new Business()
+        {
+            BusinessName = newBusiness.BusinessName,
+            BusinessOwner = newBusiness.BusinessOwner,
+            StartDate = newBusiness.StartDate,
+            Industry = newBusiness.Industry
+        };
+        db.Businesses.Add(business);
+        db.SaveChanges();
+        Address address = new Address()
+        {
+            Street = newBusiness.Street,
+            City = newBusiness.City,
+            State = newBusiness.State,
+            ZipCode = newBusiness.ZipCode,
+            BusinessId = business.BusinessId
+        };
+        db.Addresses.Add(address);
+        db.SaveChanges();
         return ViewOne(business.BusinessId);
     }
 

@@ -1,3 +1,5 @@
+@model NewBusinessForm
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -20,20 +22,24 @@
 
         <form asp-controller="CRM" asp-action="CreateBusiness" method="POST">
             <div>
-                <label for="BusinessName" class="form-label">Business Name</label>
-                <input type="text" for="BusinessName" class="form-control">
+                <label asp-for="BusinessName" class="form-label"></label>
+                <span asp-validation-for="BusinessName" style="color: red; font-weight: bold;"></span>
+                <input asp-for="BusinessName" class="form-control">
             </div>
             <div>
-                <label for="BusinessOwner" class="form-label">Business Owner</label>
-                <input type="text" for="BusinessOwner" class="form-control">
+                <label asp-for="BusinessOwner" class="form-label"></label>
+                <span asp-validation-for="BusinessOwner" style="color: red; font-weight: bold;"></span>
+                <input asp-for="BusinessOwner" class="form-control">
             </div>
             <div>
-                <label for="StartDate" class="form-label">Date Started or Acquisition</label>
-                <input type="date" for="StartDate" class="form-control">
+                <label asp-for="StartDate" class="form-label"></label>
+                <span asp-validation-for="StartDate" style="color: red; font-weight: bold;"></span>
+                <input type="date" asp-for="StartDate" class="form-control">
             </div>
             <div>
-                <label for="Industry" class="form-label">Industry</label>
-                <select for="Industry" class="form-control">
+                <label asp-for="Industry" class="form-label">Industry</label>
+                <span asp-validation-for="Industry" style="color: red; font-weight: bold;"></span>
+                <select asp-for="Industry" class="form-control">
                     <option value="Automotive">Automotive</option>
                     <option value="Health Care">Health Care</option>
                     <option value="Legal">Legal</option>
@@ -42,7 +48,24 @@
                     <option value="Restaurant">Restaurant</option>
                 </select>
             </div>
-            <button type="submit">SUBMIT</button>
+            <div>
+                <label asp-for="Street" class="form-label"></label>
+                <span asp-validation-for="Street" style="color: red; font-weight: bold;"></span>
+                <input asp-for="Street" class="form-control">
+            </div>
+            <div>
+                <label asp-for="City" class="form-label"></label>
+                <span asp-validation-for="City" style="color: red; font-weight: bold;"></span>
+                <select asp-for="City" class="form-control">
+
+                </select>
+            </div>
+            <div>
+                <label asp-for="ZipCode" class="form-label"></label>
+                <span asp-validation-for="ZipCode" style="color: red; font-weight: bold;"></span>
+                <input asp-for="ZipCode" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-outline-success">Add Business</button>
         </form>
         <script src="~/lib/jquery/dist/jquery.min.js"></script>
         <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
