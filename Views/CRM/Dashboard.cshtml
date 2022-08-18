@@ -33,7 +33,14 @@
                     <tr>
                         <td>@b.BusinessName</td>
                         <td>@b.BusinessOwner</td>
-                        <td>@b.UsersWorkedWith[0].ActivityType @b.UsersWorkedWith[0].CreatedAt</td>
+                        @if(@b.UsersWorkedWith.Count > 0)
+                        {
+                            <td>@b.UsersWorkedWith[0].ActivityType @b.UsersWorkedWith[0].CreatedAt</td>
+                        }
+                        else
+                        {
+                            <td>No activity yet</td>
+                        }
                         <td><a asp-controller="CRM" asp-action="ViewOne"  asp-route-businessId=@b.BusinessId class="btn btn-outline-primary">View</a><a asp-controller="CRM" asp-action="DeleteOne"  asp-route-businessId="@b.BusinessId" class="btn btn-outline-danger">Delete</a></td>
                     </tr>
                 }

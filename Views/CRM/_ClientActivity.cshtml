@@ -9,19 +9,20 @@
         <title>Document</title>
     </head>
     <body>
-
         @foreach (Activity a in ViewBag.OneBusiness.UsersWorkedWith)
         {
             <div>
                 <p>@a.ActivityType</p>
                 <p>@a.Notes</p>
+                <p>@a.CreatedAt</p>
             </div>
         }
-        <form asp-controller="CRM" asp-action="AddActivity" asp-route-businessId="@ViewBag.OneBusiness" method="POST">
+        <form asp-controller="CRM" asp-action="AddActivity" asp-route-businessId="@ViewBag.OneBusiness.BusinessId" method="POST">
             <div>
                 <label asp-for="ActivityType" class="form-label"></label>
                 <span asp-validation-for="ActivityType" style="color: red; font-weight: bold;"></span>
                 <select asp-for="ActivityType">
+                    <option>select</option>
                     <option value="Phone Call">Phone Call</option>
                     <option value="Email">Email</option>
                     <option value="Presentation">Presentation</option>

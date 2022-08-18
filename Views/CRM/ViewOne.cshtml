@@ -31,6 +31,12 @@
             <p>@a.Street</p>
             <p>@a.City, @a.State @a.ZipCode</p>
         }
+        @foreach (Note n in ViewBag.OneBusiness.SpecialNotes)
+        {
+            <p>@n.SpecialNote</p>
+            <p>@n.CreatedAt</p>
+        }
+        <partial name="_SpecialNotes"></partial>
         <partial name="_ClientActivity"></partial>
         <script src="~/lib/jquery/dist/jquery.min.js"></script>
         <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

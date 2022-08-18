@@ -3,9 +3,12 @@ namespace MyCRM.Models;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-[NotMapped]
-public class NewBusinessForm
+public class Business
 {
+
+    [Key]
+    public int BusinessId {get; set;}
+
     [Required(ErrorMessage = "is required")]
     [MinLength(2, ErrorMessage = "must be at least 2 characters long")]
     [Display(Name = "Business Name")]
@@ -23,18 +26,21 @@ public class NewBusinessForm
     [Required(ErrorMessage = "is required")]
     public string Industry {get; set;}
 
-    [MinLength(6, ErrorMessage = "must be valid")]
-    [Display(Name = "Street")]
-    public string? Street {get; set;}
+    public DateTime CreatedAt {get; set;} = DateTime.Now;
+    public DateTime UpdatedAt {get; set;} = DateTime.Now;
 
-    [Required(ErrorMessage = "is required")]
-    public string City {get; set;}
+    public List<Activity> UsersWorkedWith {get; set;} = new List<Activity>();
+    public List<Address> AddressList {get; set;} = new List<Address>();
+    public List<Note> SpecialNotes {get; set;} = new List<Note>(); 
+    public List<Purchase> PurchaseList {get; set;} = new List<Purchase>();
+}
 
-    [Required(ErrorMessage = "State is required")]
-    public string State {get; set;}
-
-    [Required(ErrorMessage = "is required")]
-    [RegularExpression("^[0-9]{5}?$", ErrorMessage = "must be valid")]
-    [Display(Name = "Zipcode")]
-    public int ZipCode {get; set;}
+[NotMapped]
+public class MyDateAttribute : ValidationAttribute
+{
+    public override bool IsValid(object value)
+    {
+        DateTime d = Convert.ToDateTime(value);
+        return d <= DateTime.Now;
+    }
 }

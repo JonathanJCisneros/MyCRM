@@ -56,7 +56,12 @@
             <div>
                 <label asp-for="City" class="form-label"></label>
                 <span asp-validation-for="City" style="color: red; font-weight: bold;"></span>
-                <select asp-for="City" class="form-control">
+                <input asp-for="City" class="form-control">
+            </div>
+            <div>
+                <label asp-for="State" class="form-label"></label>
+                <span asp-validation-for="State" style="color: red; font-weight: bold;"></span>
+                <select asp-for="State" class="form-control">
                     <option >Select</option>
                     <option value="AL">AL</option>
                     <option value="AK">AK</option>

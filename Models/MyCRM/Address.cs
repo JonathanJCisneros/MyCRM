@@ -23,10 +23,9 @@ public class Address
     [Display(Name = "Zipcode")]
     public int ZipCode {get; set;}
 
-    // [Required]
+    [Required]
     public int BusinessId {get; set;}
     public DateTime CreatedAt {get; set;} = DateTime.Now;
     public DateTime UpdatedAt {get; set;} = DateTime.Now;
-
     public Business? Business {get; set;}
 }

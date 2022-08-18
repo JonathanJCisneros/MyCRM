@@ -41,7 +41,6 @@ public class CRMController : Controller
         List<Business> UsersLeads = db.Businesses
             .Include(u => u.UsersWorkedWith)
             .ThenInclude(u => u.User)
-            .Where(u => u.UsersWorkedWith.Any(u => u.UserId == uid))
             .ToList();
         return View("Dashboard", UsersLeads);
     }
@@ -74,7 +73,6 @@ public class CRMController : Controller
         };
         db.Businesses.Add(business);
         db.SaveChanges();
-        Console.WriteLine(business.BusinessId);
         Address address = new Address()
         {
             Street = newBusiness.Street,
@@ -97,6 +95,7 @@ public class CRMController : Controller
         }
         Business? OneBusiness = db.Businesses
             .Include(a => a.AddressList)
+            .Include(n => n.SpecialNotes)
             .Include(g => g.UsersWorkedWith.OrderBy(a => a.CreatedAt))
             .ThenInclude(g => g.User)
             .FirstOrDefault(e => e.BusinessId == businessId);
@@ -124,5 +123,33 @@ public class CRMController : Controller
         db.Businesses.Remove(oneBusiness);
         db.SaveChanges();
         return RedirectToAction("Dashboard");
+    }
+
+    [HttpPost("/activity/new/{businessId}")]
+    public IActionResult AddActivity(int businessId, Activity newActivity)
+    {
+        if(ModelState.IsValid == false)
+        {
+            return ViewOne(businessId);
+        }
+        newActivity.BusinessId = businessId;
+        newActivity.UserId = (int)uid;
+        db.Activities.Add(newActivity);
+        db.SaveChanges();
+        return RedirectToAction("ViewOne",new {businessId = businessId});
+    }
+
+    [HttpPost("/specialnote/new/{businessId}")]
+    public IActionResult AddSpecialNote(int businessId, Note newNote)
+    {
+        if(ModelState.IsValid == false)
+        {
+            return ViewOne(businessId);
+        }
+        newNote.BusinessId = businessId;
+        newNote.UserId = (int)uid;
+        db.Notes.Add(newNote);
+        db.SaveChanges();
+        return RedirectToAction("ViewOne",new {businessId = businessId});
     }
 }

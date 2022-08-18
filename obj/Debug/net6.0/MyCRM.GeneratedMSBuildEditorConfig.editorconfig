@@ -15,6 +15,22 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\jonat\OneDrive\Documents\Coding Dojo\Projects\MyCRM
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/jonat/OneDrive/Documents/Coding Dojo/Projects/MyCRM/Views/Admin/AdminDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRtaW5EYXNoYm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/OneDrive/Documents/Coding Dojo/Projects/MyCRM/Views/Admin/AdminLoginOrRegsiter.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRtaW5Mb2dpbk9yUmVnc2l0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/OneDrive/Documents/Coding Dojo/Projects/MyCRM/Views/Admin/_Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cX0xvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/OneDrive/Documents/Coding Dojo/Projects/MyCRM/Views/Admin/_Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cX1JlZ2lzdGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/jonat/OneDrive/Documents/Coding Dojo/Projects/MyCRM/Views/CRM/Dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXERhc2hib2FyZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -23,12 +39,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXE5ld0J1c2luZXNzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/jonat/OneDrive/Documents/Coding Dojo/Projects/MyCRM/Views/CRM/Presentation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXFByZXNlbnRhdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/jonat/OneDrive/Documents/Coding Dojo/Projects/MyCRM/Views/CRM/ViewOne.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXFZpZXdPbmUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/jonat/OneDrive/Documents/Coding Dojo/Projects/MyCRM/Views/CRM/_ClientActivity.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXF9DbGllbnRBY3Rpdml0eS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/OneDrive/Documents/Coding Dojo/Projects/MyCRM/Views/CRM/_Purchase.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXF9QdXJjaGFzZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/OneDrive/Documents/Coding Dojo/Projects/MyCRM/Views/CRM/_SpecialNotes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXF9TcGVjaWFsTm90ZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/jonat/OneDrive/Documents/Coding Dojo/Projects/MyCRM/Views/User/Home.cshtml]

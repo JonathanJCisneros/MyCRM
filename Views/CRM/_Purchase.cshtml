@@ -1,0 +1,47 @@
+@model Purchase
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/MeetUpCenter.styles.css" asp-append-version="true" />
+    </head>
+    <body>
+        <form asp-controller="CRM" asp-action="AddPurchase" method="POST">
+            <div>
+                <label asp-for="ProductId" class="form-label"></label>
+                <span asp-validation-for="ProductId" style="color: red; font-weight: bold;"></span>
+                <select asp-for="ProductId">
+                    <option>select</option>
+                @foreach (Product p in ViewBag.Products)
+                {
+                    <option value="@p.ProductId">@p.Name</option>
+                }
+                </select>
+            </div>
+            <div>
+                <label asp-for="AddressId" class="form-label"></label>
+                <span asp-validation-for="AddressId" style="color: red; font-weight: bold;"></span>
+                <select asp-for="AddressId">
+                    <option>select</option>
+                @foreach (Address a in ViewBag.oneBusiness.AddressList)
+                {
+                    <option value="@a.AddressId">
+                        <p>@a.Street</p>
+                        <p>@a.City, @a.State @a.ZipCode</p>
+                    </option>
+                }
+                </select>
+            </div>
+            <button type="submit">Purchase</button>
+        </form>
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+    </body>
+</html>
