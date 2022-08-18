@@ -20,6 +20,17 @@
             </div>
         </div>
 
+        <h1>@ViewBag.OneBusiness.BusinessName</h1>
+        <h2>@ViewBag.OneBusiness.BusinessOwner</h2>
+        <h3>@ViewBag.OneBusiness.StartDate</h3>
+        <h4>@ViewBag.OneBusiness.Industry</h4>
+        
+        <h4>Address List</h4>
+        @foreach (Address a in ViewBag.OneBusiness.AddressList)
+        {
+            <p>@a.Street</p>
+            <p>@a.City, @a.State @a.ZipCode</p>
+        }
         <partial name="_ClientActivity"></partial>
         <script src="~/lib/jquery/dist/jquery.min.js"></script>
         <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

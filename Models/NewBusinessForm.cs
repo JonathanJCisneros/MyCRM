@@ -34,7 +34,7 @@ public class NewBusinessForm
     public string State {get; set;}
 
     [Required(ErrorMessage = "is required")]
-    [DataType(DataType.PostalCode, ErrorMessage = "must be valid")]
+    [RegularExpression("^[0-9]{5}?$", ErrorMessage = "must be valid")]
     [Display(Name = "Zipcode")]
-    public string ZipCode {get; set;}
+    public int ZipCode {get; set;}
 }

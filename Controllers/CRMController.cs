@@ -53,7 +53,7 @@ public class CRMController : Controller
         {
             return RedirectToAction("Home", "User");
         }
-        return View("NewBusinessForm");
+        return View("NewBusiness");
     }
 
 
@@ -74,6 +74,7 @@ public class CRMController : Controller
         };
         db.Businesses.Add(business);
         db.SaveChanges();
+        Console.WriteLine(business.BusinessId);
         Address address = new Address()
         {
             Street = newBusiness.Street,
@@ -95,6 +96,7 @@ public class CRMController : Controller
             return RedirectToAction("Home", "User");
         }
         Business? OneBusiness = db.Businesses
+            .Include(a => a.AddressList)
             .Include(g => g.UsersWorkedWith.OrderBy(a => a.CreatedAt))
             .ThenInclude(g => g.User)
             .FirstOrDefault(e => e.BusinessId == businessId);
