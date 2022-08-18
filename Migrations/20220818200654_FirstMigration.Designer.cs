@@ -11,8 +11,8 @@ using MyCRM.Models;
 namespace MyCRM.Migrations
 {
     [DbContext(typeof(MyCRMContext))]
-    [Migration("20220818020057_Three")]
-    partial class Three
+    [Migration("20220818200654_FirstMigration")]
+    partial class FirstMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -89,6 +89,39 @@ namespace MyCRM.Migrations
                     b.HasIndex("BusinessId");
 
                     b.ToTable("Addresses");
+                });
+
+            modelBuilder.Entity("MyCRM.Models.Admin", b =>
+                {
+                    b.Property<int>("AdminId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("datetime(6)");
+
+                    b.HasKey("AdminId");
+
+                    b.ToTable("Administrators");
                 });
 
             modelBuilder.Entity("MyCRM.Models.Business", b =>

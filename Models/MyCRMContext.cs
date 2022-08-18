@@ -9,6 +9,8 @@ public class MyCRMContext : DbContext
 
     public DbSet<User> Users { get; set; } 
 
+    public DbSet<Admin> Administrators { get; set; } 
+
     public DbSet<Activity> Activities {get; set;}
 
     public DbSet<Business> Businesses {get; set;}

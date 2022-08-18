@@ -30,13 +30,77 @@ public class AdminController : Controller
         db = context;
     }
 
-    
+    [HttpGet("/admin")]
+    public IActionResult Admin()
+    {
+        return View("AdminLoginOrRegister");
+    }
+
+    [HttpPost("/admin/register")]
+    public IActionResult Register(Admin newAdmin)
+    {
+        if(db.Administrators.Any(a => a.Email == newAdmin.Email))
+        {
+            ModelState.AddModelError("Email", "is taken");
+        }
+
+        if(ModelState.IsValid == false)
+        {
+            return Admin();
+        }
+
+        PasswordHasher<Admin> hashBrowns = new PasswordHasher<Admin>();
+        newAdmin.Password = hashBrowns.HashPassword(newAdmin, newAdmin.Password);
+
+        db.Administrators.Add(newAdmin);
+        db.SaveChanges();
+        HttpContext.Session.SetInt32("AdminId", newAdmin.AdminId);
+        HttpContext.Session.SetString("Name", newAdmin.FirstName);
+        return RedirectToAction("AdminDashboard");
+    }
+
+    [HttpPost("/login")]
+    public IActionResult Login(AdminLogin admin)
+    {
+        if(ModelState.IsValid == false)
+        {
+            return Admin();
+        }
+
+        Admin? dbAdmin = db.Administrators.FirstOrDefault(a => a.Email == admin.LoginEmail);
+
+        if(dbAdmin == null)
+        {
+            ModelState.AddModelError("LoginEmail", "not found");
+            return Admin();
+        } 
+
+        PasswordHasher<AdminLogin> hashBrowns = new PasswordHasher<AdminLogin>();
+        PasswordVerificationResult pwCheck = hashBrowns.VerifyHashedPassword(admin, dbAdmin.Password, admin.LoginPassword);
+
+        if(pwCheck == 0)
+        {
+            ModelState.AddModelError("LoginPassword", "is invalid");
+            return Admin();
+        }
+
+        HttpContext.Session.SetInt32("AdminId", dbAdmin.AdminId);
+        HttpContext.Session.SetString("Name", dbAdmin.FirstName);
+        return RedirectToAction("AdminDashboard");
+    }
+
+    [HttpGet("/logout")]
+    public IActionResult Logout()
+    {
+        HttpContext.Session.Clear();
+        return RedirectToAction("Admin");
+    }
 
     [HttpGet("/admin/dashboard")]
     public IActionResult AdminDashboard()
     {
         return View("AdminDashboard");
-    }
+    }    
 
     [HttpPost("/product/new")]
     public IActionResult CreateProduct(Product newProduct)
