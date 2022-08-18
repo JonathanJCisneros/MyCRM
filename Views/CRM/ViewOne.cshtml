@@ -37,9 +37,9 @@
             <p>@n.CreatedAt</p>
         }
 
-        @foreach (Product p in ViewBag.oneBusiness.PurchaseList)
+        @foreach (Purchase p in ViewBag.OneBusiness.PurchaseList)
         {
-            <p>@p.Name</p>
+            <p>@p.Product.Name</p>
         }
         <partial name="_SpecialNotes"></partial>
         <partial name="_ClientActivity"></partial>
