@@ -16323,11 +16323,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\Views\\Admin\\AdminLoginOrRegsiter.cshtml",
-      "TargetPath": "Views\\Admin\\AdminLoginOrRegsiter.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\Views\\Admin\\_Login.cshtml",
       "TargetPath": "Views\\Admin\\_Login.cshtml",
       "FileKind": "mvc"
@@ -16340,6 +16335,11 @@
     {
       "FilePath": "c:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\Views\\CRM\\Presentation.cshtml",
       "TargetPath": "Views\\CRM\\Presentation.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\Views\\Admin\\AdminLoginOrRegister.cshtml",
+      "TargetPath": "Views\\Admin\\AdminLoginOrRegister.cshtml",
       "FileKind": "mvc"
     },
     {

@@ -152,4 +152,32 @@ public class CRMController : Controller
         db.SaveChanges();
         return RedirectToAction("ViewOne",new {businessId = businessId});
     }
+
+    [HttpGet("/client/{businessId}/present")]
+    public IActionResult Presentation(int businessId)
+    {
+        Business? oneBusiness = db.Businesses
+            .Include(a => a.AddressList)
+            .Include(a => a.PurchaseList)
+                .ThenInclude(a => a.Product)
+            .FirstOrDefault(b => b.BusinessId == businessId);
+        ViewBag.oneBusiness = oneBusiness;
+
+        List<Product> allProducts = db.Products.ToList();
+        ViewBag.Products = allProducts;
+        return View("Presentation");
+    }
+
+    [HttpPost("/purchase/{businessId}")]
+    public IActionResult AddPurchase(int businessId, Purchase newPurchase)
+    {
+        if(ModelState.IsValid == false)
+        {
+            return Presentation(businessId);
+        }
+        newPurchase.BusinessId = businessId;
+        db.Purchases.Add(newPurchase);
+        db.SaveChanges();
+        return ViewOne(businessId);
+    }
 }

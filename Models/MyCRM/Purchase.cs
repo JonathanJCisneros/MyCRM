@@ -11,10 +11,12 @@ public class Purchase
     [Required]
     public int BusinessId {get; set;}
 
-    [Required]
+    [Required(ErrorMessage = "is required")]
+    [Display(Name = "Product")]
     public int ProductId {get; set;}
 
-    [Required]
+    [Required(ErrorMessage = "is required")]
+    [Display(Name = "Business Location")]
     public int AddressId {get; set;}
     public DateTime CreatedAt {get; set;} = DateTime.Now;
     public DateTime UpdatedAt {get; set;} = DateTime.Now;

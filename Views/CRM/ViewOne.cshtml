@@ -19,7 +19,7 @@
                 <a asp-controller="User" asp-action="Logout" class="btn btn-outline-danger">Log Out</a>
             </div>
         </div>
-
+        <a asp-controller="CRM" asp-action="Presentation"  asp-route-businessId="@ViewBag.oneBusiness.BusinessId">Presentation</a>
         <h1>@ViewBag.OneBusiness.BusinessName</h1>
         <h2>@ViewBag.OneBusiness.BusinessOwner</h2>
         <h3>@ViewBag.OneBusiness.StartDate</h3>
@@ -35,6 +35,11 @@
         {
             <p>@n.SpecialNote</p>
             <p>@n.CreatedAt</p>
+        }
+
+        @foreach (Product p in ViewBag.oneBusiness.PurchaseList)
+        {
+            <p>@p.Name</p>
         }
         <partial name="_SpecialNotes"></partial>
         <partial name="_ClientActivity"></partial>

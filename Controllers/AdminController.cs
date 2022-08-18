@@ -33,11 +33,15 @@ public class AdminController : Controller
     [HttpGet("/admin")]
     public IActionResult Admin()
     {
+        if(loggedIn)
+        {
+            return AdminDashboard();
+        }
         return View("AdminLoginOrRegister");
     }
 
     [HttpPost("/admin/register")]
-    public IActionResult Register(Admin newAdmin)
+    public IActionResult AdminRegister(Admin newAdmin)
     {
         if(db.Administrators.Any(a => a.Email == newAdmin.Email))
         {
@@ -59,8 +63,8 @@ public class AdminController : Controller
         return RedirectToAction("AdminDashboard");
     }
 
-    [HttpPost("/login")]
-    public IActionResult Login(AdminLogin admin)
+    [HttpPost("/admin/login")]
+    public IActionResult AdminLogin(AdminLogin admin)
     {
         if(ModelState.IsValid == false)
         {
@@ -89,7 +93,7 @@ public class AdminController : Controller
         return RedirectToAction("AdminDashboard");
     }
 
-    [HttpGet("/logout")]
+    [HttpGet("/admin/logout")]
     public IActionResult Logout()
     {
         HttpContext.Session.Clear();
@@ -99,6 +103,10 @@ public class AdminController : Controller
     [HttpGet("/admin/dashboard")]
     public IActionResult AdminDashboard()
     {
+        if(!loggedIn)
+        {
+            return Admin();
+        }
         return View("AdminDashboard");
     }    
 
