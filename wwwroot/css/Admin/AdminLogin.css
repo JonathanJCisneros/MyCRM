@@ -3,6 +3,13 @@
     padding: 0px;
 }
 
+.adminLoginTitle {
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+}
+
 .loginTitle {
     font-size: 45px;
     font-weight: bold;
@@ -16,4 +23,3 @@
     border-radius: 1%;
     margin-top: 100px;
 }
-

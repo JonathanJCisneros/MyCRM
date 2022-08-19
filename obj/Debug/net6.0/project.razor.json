@@ -16298,18 +16298,18 @@
   "RootNamespace": "MyCRM",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\Views\\Admin\\_Login.cshtml",
-      "TargetPath": "Views\\Admin\\_Login.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\Views\\Admin\\AdminLoginOrRegister.cshtml",
-      "TargetPath": "Views\\Admin\\AdminLoginOrRegister.cshtml",
+      "FilePath": "c:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\Views\\User\\UserLogin.cshtml",
+      "TargetPath": "Views\\User\\UserLogin.cshtml",
       "FileKind": "mvc"
     },
     {
       "FilePath": "c:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\Views\\CRM\\_Purchase.cshtml",
       "TargetPath": "Views\\CRM\\_Purchase.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\Views\\Admin\\AdminLogin.cshtml",
+      "TargetPath": "Views\\Admin\\AdminLogin.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16333,8 +16333,13 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\Views\\User\\_Login.cshtml",
-      "TargetPath": "Views\\User\\_Login.cshtml",
+      "FilePath": "c:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\Views\\User\\UserRegister.cshtml",
+      "TargetPath": "Views\\User\\UserRegister.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\Views\\Admin\\AdminRegister.cshtml",
+      "TargetPath": "Views\\Admin\\AdminRegister.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16343,18 +16348,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\Views\\User\\_Register.cshtml",
-      "TargetPath": "Views\\User\\_Register.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\Views\\CRM\\_SpecialNotes.cshtml",
       "TargetPath": "Views\\CRM\\_SpecialNotes.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\Views\\User\\Home.cshtml",
-      "TargetPath": "Views\\User\\Home.cshtml",
       "FileKind": "mvc"
     },
     {

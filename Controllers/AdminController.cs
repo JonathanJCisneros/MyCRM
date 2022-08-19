@@ -37,7 +37,17 @@ public class AdminController : Controller
         {
             return AdminDashboard();
         }
-        return View("AdminLoginOrRegister");
+        return View("AdminLogin");
+    }
+
+    [HttpGet("/admin/new")]
+    public IActionResult AdminRegistration()
+    {
+        if(loggedIn)
+        {
+            return AdminDashboard();
+        }
+        return View("AdminRegister");
     }
 
     [HttpPost("/admin/register")]
@@ -50,7 +60,7 @@ public class AdminController : Controller
 
         if(ModelState.IsValid == false)
         {
-            return Admin();
+            return AdminRegistration();
         }
 
         PasswordHasher<Admin> hashBrowns = new PasswordHasher<Admin>();

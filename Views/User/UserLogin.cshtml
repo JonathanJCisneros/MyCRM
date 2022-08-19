@@ -1,4 +1,4 @@
-@model AdminLogin
+@model UserLogin
 
 <!DOCTYPE html>
 <html lang="en">
@@ -6,18 +6,19 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>MyCRM</title>
+        <link rel="stylesheet" href="~/css/User/UserLogin.css" />
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="~/css/Admin/_Login.css" />
         <link rel="stylesheet" href="~/MeetUpCenter.styles.css" asp-append-version="true" />
     </head>
     <body>
-        <form asp-controller="Admin" asp-action="AdminLogin" method="POST">
-            <h1>Login</h1>
+        <h1 class="userLoginTitle">MyCRM</h1>
+        <form asp-controller="User" asp-action="Login" method="POST" class="loginForm">
+            <h1 class="loginTitle">Login</h1>
             <div>
                 <label asp-for="LoginEmail" class="form-label"></label>
                 <span asp-validation-for="LoginEmail" style="color: red; font-weight: bold;"></span>
-                <input asp-for="LoginEmail" class="form-control">
+                <input asp-for="LoginEmail" class="form-control" >
             </div>
             <div>
                 <label asp-for="LoginPassword" class="form-label"></label>
@@ -27,8 +28,13 @@
             <br>
             <button type="submit" class="btn btn-outline-primary">Log In</button>
         </form>
+        <div style="text-align: center; margin-top: 25px;">
+            <a asp-controller="User" asp-action="UserRegister">Don't have an account yet? Sign Up!</a>
+        </div>
+        
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
     </body>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
 </html>
+

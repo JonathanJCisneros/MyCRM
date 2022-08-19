@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "LGXflNVrGCqfhZkq5Nq6a2YxN4DPG5YvdSVWXbSmfpI=",
+  "Hash": "7wfmmi7ea/g6vI4rdsucLSk2zwBSmZ21s1U7rbWmPyQ=",
   "Source": "MyCRM",
   "BasePath": "_content/MyCRM",
   "Mode": "Default",
@@ -16,23 +16,6 @@
     }
   ],
   "Assets": [
-    {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\css\\Admin\\_Login.css",
-      "SourceId": "MyCRM",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
-      "BasePath": "_content/MyCRM",
-      "RelativePath": "css/Admin/_Login.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\Admin\\_Login.css"
-    },
     {
       "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\css\\Admin\\_ProductForm.css",
       "SourceId": "MyCRM",
@@ -85,12 +68,12 @@
       "OriginalItemSpec": "wwwroot\\css\\Admin\\AdminDashboard.css"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\css\\Admin\\AdminLoginOrRegister.css",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\css\\Admin\\AdminLogin.css",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
-      "RelativePath": "css/Admin/AdminLoginOrRegister.css",
+      "RelativePath": "css/Admin/AdminLogin.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -99,7 +82,24 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\Admin\\AdminLoginOrRegister.css"
+      "OriginalItemSpec": "wwwroot\\css\\Admin\\AdminLogin.css"
+    },
+    {
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\css\\Admin\\AdminRegister.css",
+      "SourceId": "MyCRM",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "BasePath": "_content/MyCRM",
+      "RelativePath": "css/Admin/AdminRegister.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Admin\\AdminRegister.css"
     },
     {
       "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\css\\CRM\\_ClientActivity.css",
@@ -221,12 +221,12 @@
       "OriginalItemSpec": "wwwroot\\css\\CRM\\ViewOne.css"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\css\\User\\_Login.css",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\css\\User\\UserLogin.css",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
-      "RelativePath": "css/User/_Login.css",
+      "RelativePath": "css/User/UserLogin.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -235,15 +235,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\User\\_Login.css"
+      "OriginalItemSpec": "wwwroot\\css\\User\\UserLogin.css"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\css\\User\\_Register.css",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\css\\User\\UserRegister.css",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
-      "RelativePath": "css/User/_Register.css",
+      "RelativePath": "css/User/UserRegister.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -252,24 +252,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\User\\_Register.css"
-    },
-    {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\css\\User\\Home.css",
-      "SourceId": "MyCRM",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
-      "BasePath": "_content/MyCRM",
-      "RelativePath": "css/User/Home.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\User\\Home.css"
+      "OriginalItemSpec": "wwwroot\\css\\User\\UserRegister.css"
     },
     {
       "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\favicon.ico",

@@ -38,7 +38,17 @@ public class UserController : Controller
         {
             return RedirectToAction("Dashboard", "CRM");
         }
-        return View("Home");
+        return View("UserLogin");
+    }
+
+    [HttpGet("/user/new")]
+    public IActionResult UserRegister()
+    {
+        if(loggedIn)
+        {
+            return RedirectToAction("Dashboard", "CRM");
+        }
+        return View("UserRegister");
     }
 
     [HttpPost("/register")]
@@ -51,7 +61,7 @@ public class UserController : Controller
 
         if(ModelState.IsValid == false)
         {
-            return Home();
+            return UserRegister();
         }
 
         PasswordHasher<User> hashBrowns = new PasswordHasher<User>();
