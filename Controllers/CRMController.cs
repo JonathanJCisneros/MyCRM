@@ -95,6 +95,8 @@ public class CRMController : Controller
         }
         Business? OneBusiness = db.Businesses
             .Include(a => a.AddressList)
+            .Include(a => a.PurchaseList)
+                .ThenInclude(a => a.Product)
             .Include(n => n.SpecialNotes)
             .Include(g => g.UsersWorkedWith.OrderBy(a => a.CreatedAt))
             .ThenInclude(g => g.User)
@@ -136,7 +138,7 @@ public class CRMController : Controller
         newActivity.UserId = (int)uid;
         db.Activities.Add(newActivity);
         db.SaveChanges();
-        return RedirectToAction("ViewOne",new {businessId = businessId});
+        return RedirectToAction("ViewOne", new {businessId = businessId});
     }
 
     [HttpPost("/specialnote/new/{businessId}")]
