@@ -1,0 +1,23 @@
+* {
+    margin: 0px auto;
+    padding: 10px;
+}
+
+.newBusinessTitle{
+    font-weight: bold;
+}
+
+#industry {
+    width: 200px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}

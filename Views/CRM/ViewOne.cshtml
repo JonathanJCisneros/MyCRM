@@ -21,7 +21,7 @@
         </div>
         <a asp-controller="CRM" asp-action="Presentation"  asp-route-businessId="@ViewBag.oneBusiness.BusinessId">Presentation</a>
         <h1>@ViewBag.OneBusiness.BusinessName</h1>
-        <h2>@ViewBag.OneBusiness.BusinessOwner</h2>
+        <h2>@ViewBag.OneBusiness.StaffList[0].FirstName</h2>
         <h3>@ViewBag.OneBusiness.StartDate</h3>
         <h4>@ViewBag.OneBusiness.Industry</h4>
         

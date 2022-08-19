@@ -39,7 +39,8 @@ public class CRMController : Controller
         }
 
         List<Business> UsersLeads = db.Businesses
-            .Include(u => u.UsersWorkedWith)
+            .Include(s => s.StaffList)
+            .Include(u => u.UsersWorkedWith.OrderBy(e => e.CreatedAt))
             .ThenInclude(u => u.User)
             .ToList();
         return View("Dashboard", UsersLeads);
@@ -67,12 +68,24 @@ public class CRMController : Controller
         Business business = new Business()
         {
             BusinessName = newBusiness.BusinessName,
-            BusinessOwner = newBusiness.BusinessOwner,
             StartDate = newBusiness.StartDate,
             Industry = newBusiness.Industry
         };
         db.Businesses.Add(business);
         db.SaveChanges();
+
+        Staff contact = new Staff()
+        {
+            StaffType = newBusiness.StaffType,
+            FirstName = newBusiness.FirstName,
+            LastName = newBusiness.LastName,
+            PhoneNumber = newBusiness.PhoneNumber,
+            Email = newBusiness.Email,
+            BusinessId = business.BusinessId
+        };
+        db.Staff.Add(contact);
+        db.SaveChanges();
+
         Address address = new Address()
         {
             Street = newBusiness.Street,
@@ -94,6 +107,7 @@ public class CRMController : Controller
             return RedirectToAction("Home", "User");
         }
         Business? OneBusiness = db.Businesses
+            .Include(s => s.StaffList)
             .Include(a => a.AddressList)
             .Include(a => a.PurchaseList)
                 .ThenInclude(a => a.Product)

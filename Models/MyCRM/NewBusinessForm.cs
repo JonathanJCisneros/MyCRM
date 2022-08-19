@@ -11,10 +11,28 @@ public class NewBusinessForm
     [Display(Name = "Business Name")]
     public string BusinessName {get; set;}
 
-    [Required(ErrorMessage = "name is required")]
-    [MinLength(2, ErrorMessage = "name must be at least 2 characters long")]
-    [Display(Name = "Business Owner")]
-    public string BusinessOwner {get; set;}
+    [Required(ErrorMessage = "is required")]
+    [Display(Name = "Position")]
+    public string StaffType {get; set;}
+
+    [Required(ErrorMessage = "is required")]
+    [MinLength(2, ErrorMessage = "must be at least 2 characters long")]
+    [Display(Name = "First Name")]
+    public string FirstName {get; set;}
+
+    [Required(ErrorMessage = "is required")]
+    [MinLength(2, ErrorMessage = "must be at least 2 characters long")]
+    [Display(Name = "Last Name")]
+    public string LastName {get; set;}
+
+    [Required(ErrorMessage = "is required")]
+    [Display(Name = "Phone Number")]
+    public long PhoneNumber {get; set;}
+
+    [Required(ErrorMessage = "is required")]
+    [EmailAddress]
+    [Display(Name = "Email Address")]
+    public string Email {get; set;}
 
     [MyDate(ErrorMessage = "must be in the past")]
     [Display(Name = "Date Started or Acquisition")]

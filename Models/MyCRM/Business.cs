@@ -14,11 +14,6 @@ public class Business
     [Display(Name = "Business Name")]
     public string BusinessName {get; set;}
 
-    [Required(ErrorMessage = "name is required")]
-    [MinLength(2, ErrorMessage = "name must be at least 2 characters long")]
-    [Display(Name = "Business Owner")]
-    public string BusinessOwner {get; set;}
-
     [MyDate(ErrorMessage = "must be in the past")]
     [Display(Name = "Date Started or Acquisition")]
     public DateTime? StartDate {get; set;}
@@ -30,6 +25,8 @@ public class Business
     public DateTime UpdatedAt {get; set;} = DateTime.Now;
 
     public List<Activity> UsersWorkedWith {get; set;} = new List<Activity>();
+
+    public List<Staff> StaffList {get; set;} = new List<Staff>();
     public List<Address> AddressList {get; set;} = new List<Address>();
     public List<Note> SpecialNotes {get; set;} = new List<Note>(); 
     public List<Purchase> PurchaseList {get; set;} = new List<Purchase>();

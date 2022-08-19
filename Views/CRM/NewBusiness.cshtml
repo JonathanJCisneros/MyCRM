@@ -13,113 +13,152 @@
     </head>
     <body>
         <div style="display: flex; align-items: center; justify-content: space-between;">
-            <h1>Add a New Client</h1>
-            <div style="display: flex; align-items: center;">
+            <h1 class="newBusinessTitle">Add a New Client</h1>
+            <div>
                 <a asp-controller="CRM" asp-action="Dashboard" class="btn btn-outline-primary">Dashboard</a>
                 <a asp-controller="User" asp-action="Logout" class="btn btn-outline-danger">Log Out</a>
             </div>
         </div>
-
         <form asp-controller="CRM" asp-action="CreateBusiness" method="POST">
-            <div>
-                <label asp-for="BusinessName" class="form-label"></label>
-                <span asp-validation-for="BusinessName" style="color: red; font-weight: bold;"></span>
-                <input asp-for="BusinessName" class="form-control">
+            <h3 style="text-align: center;">Business</h3>
+            <div class="row">
+                <div class="col">
+                    <label asp-for="BusinessName" class="form-label"></label>
+                    <span asp-validation-for="BusinessName" style="color: red; font-weight: bold;"></span>
+                    <input asp-for="BusinessName" class="form-control" id="bname">
+                </div>
+                <div class="col-sm-3">
+                    <label asp-for="StartDate" class="form-label"></label>
+                    <span asp-validation-for="StartDate" style="color: red; font-weight: bold;"></span>
+                    <input type="date" asp-for="StartDate" class="form-control" id="date">
+                </div>
             </div>
             <div>
-                <label asp-for="BusinessOwner" class="form-label"></label>
-                <span asp-validation-for="BusinessOwner" style="color: red; font-weight: bold;"></span>
-                <input asp-for="BusinessOwner" class="form-control">
+                <div>
+                    <label asp-for="Industry" class="form-label">Industry</label>
+                    <span asp-validation-for="Industry" style="color: red; font-weight: bold;"></span>
+                    <select asp-for="Industry" class="form-control" id="industry">
+                        <option value="none" selected disabled hidden>Select</option>
+                        <option value="Automotive">Automotive</option>
+                        <option value="Health Care">Health Care</option>
+                        <option value="Legal">Legal</option>
+                        <option value="Entertainment">Entertainment</option>
+                        <option value="Sports">Sports</option>
+                        <option value="Restaurant">Restaurant</option>
+                    </select>
+                </div>
             </div>
-            <div>
-                <label asp-for="StartDate" class="form-label"></label>
-                <span asp-validation-for="StartDate" style="color: red; font-weight: bold;"></span>
-                <input type="date" asp-for="StartDate" class="form-control">
-            </div>
-            <div>
-                <label asp-for="Industry" class="form-label">Industry</label>
-                <span asp-validation-for="Industry" style="color: red; font-weight: bold;"></span>
-                <select asp-for="Industry" class="form-control">
-                    <option value="Automotive">Automotive</option>
-                    <option value="Health Care">Health Care</option>
-                    <option value="Legal">Legal</option>
-                    <option value="Entertainment">Entertainment</option>
-                    <option value="Sports">Sports</option>
-                    <option value="Restaurant">Restaurant</option>
-                </select>
-            </div>
+            <h3 style="text-align: center;">Location</h3>
             <div>
                 <label asp-for="Street" class="form-label"></label>
                 <span asp-validation-for="Street" style="color: red; font-weight: bold;"></span>
                 <input asp-for="Street" class="form-control">
             </div>
-            <div>
-                <label asp-for="City" class="form-label"></label>
-                <span asp-validation-for="City" style="color: red; font-weight: bold;"></span>
-                <input asp-for="City" class="form-control">
+            <div class="row">
+                <div class="col-sm-5">
+                    <label asp-for="City" class="form-label"></label>
+                    <span asp-validation-for="City" style="color: red; font-weight: bold;"></span>
+                    <input asp-for="City" class="form-control">
+                </div>
+                <div class="col-sm-2">
+                    <label asp-for="State" class="form-label"></label>
+                    <span asp-validation-for="State" style="color: red; font-weight: bold;"></span>
+                    <select asp-for="State" class="form-control">
+                        <option >Select</option>
+                        <option value="AL">AL</option>
+                        <option value="AK">AK</option>
+                        <option value="AR">AR</option>
+                        <option value="AZ">AZ</option>
+                        <option value="CA">CA</option>
+                        <option value="CO">CO</option>
+                        <option value="CT">CT</option>
+                        <option value="DC">DC</option>
+                        <option value="DE">DE</option>
+                        <option value="FL">FL</option>
+                        <option value="GA">GA</option>
+                        <option value="HI">HI</option>
+                        <option value="IA">IA</option>
+                        <option value="ID">ID</option>
+                        <option value="IL">IL</option>
+                        <option value="IN">IN</option>
+                        <option value="KS">KS</option>
+                        <option value="KY">KY</option>
+                        <option value="LA">LA</option>
+                        <option value="MA">MA</option>
+                        <option value="MD">MD</option>
+                        <option value="ME">ME</option>
+                        <option value="MI">MI</option>
+                        <option value="MN">MN</option>
+                        <option value="MO">MO</option>
+                        <option value="MS">MS</option>
+                        <option value="MT">MT</option>
+                        <option value="NC">NC</option>
+                        <option value="NE">NE</option>
+                        <option value="NH">NH</option>
+                        <option value="NJ">NJ</option>
+                        <option value="NM">NM</option>
+                        <option value="NV">NV</option>
+                        <option value="NY">NY</option>
+                        <option value="ND">ND</option>
+                        <option value="OH">OH</option>
+                        <option value="OK">OK</option>
+                        <option value="OR">OR</option>
+                        <option value="PA">PA</option>
+                        <option value="RI">RI</option>
+                        <option value="SC">SC</option>
+                        <option value="SD">SD</option>
+                        <option value="TN">TN</option>
+                        <option value="TX">TX</option>
+                        <option value="UT">UT</option>
+                        <option value="VT">VT</option>
+                        <option value="VA">VA</option>
+                        <option value="WA">WA</option>
+                        <option value="WI">WI</option>
+                        <option value="WV">WV</option>
+                        <option value="WY">WY</option>
+                    </select>
+                </div>
+                <div class="col-sm-3">
+                    <label asp-for="ZipCode" class="form-label"></label>
+                    <span asp-validation-for="ZipCode" style="color: red; font-weight: bold;"></span>
+                    <input asp-for="ZipCode" class="form-control">
+                </div>
             </div>
-            <div>
-                <label asp-for="State" class="form-label"></label>
-                <span asp-validation-for="State" style="color: red; font-weight: bold;"></span>
-                <select asp-for="State" class="form-control">
-                    <option >Select</option>
-                    <option value="AL">AL</option>
-                    <option value="AK">AK</option>
-                    <option value="AR">AR</option>
-                    <option value="AZ">AZ</option>
-                    <option value="CA">CA</option>
-                    <option value="CO">CO</option>
-                    <option value="CT">CT</option>
-                    <option value="DC">DC</option>
-                    <option value="DE">DE</option>
-                    <option value="FL">FL</option>
-                    <option value="GA">GA</option>
-                    <option value="HI">HI</option>
-                    <option value="IA">IA</option>
-                    <option value="ID">ID</option>
-                    <option value="IL">IL</option>
-                    <option value="IN">IN</option>
-                    <option value="KS">KS</option>
-                    <option value="KY">KY</option>
-                    <option value="LA">LA</option>
-                    <option value="MA">MA</option>
-                    <option value="MD">MD</option>
-                    <option value="ME">ME</option>
-                    <option value="MI">MI</option>
-                    <option value="MN">MN</option>
-                    <option value="MO">MO</option>
-                    <option value="MS">MS</option>
-                    <option value="MT">MT</option>
-                    <option value="NC">NC</option>
-                    <option value="NE">NE</option>
-                    <option value="NH">NH</option>
-                    <option value="NJ">NJ</option>
-                    <option value="NM">NM</option>
-                    <option value="NV">NV</option>
-                    <option value="NY">NY</option>
-                    <option value="ND">ND</option>
-                    <option value="OH">OH</option>
-                    <option value="OK">OK</option>
-                    <option value="OR">OR</option>
-                    <option value="PA">PA</option>
-                    <option value="RI">RI</option>
-                    <option value="SC">SC</option>
-                    <option value="SD">SD</option>
-                    <option value="TN">TN</option>
-                    <option value="TX">TX</option>
-                    <option value="UT">UT</option>
-                    <option value="VT">VT</option>
-                    <option value="VA">VA</option>
-                    <option value="WA">WA</option>
-                    <option value="WI">WI</option>
-                    <option value="WV">WV</option>
-                    <option value="WY">WY</option>
-                </select>
+            <h3 style="text-align: center;">Point of Contact</h3>
+            <div class="row">
+                <div class="col-2">
+                    <label asp-for="StaffType" class="form-label"></label>
+                    <span asp-validation-for="StaffType" style="color: red; font-weight: bold;"></span>
+                    <select asp-for="StaffType" class="form-control">
+                        <option value="none" selected disabled hidden>Select</option>
+                        <option value="Owner">Owner</option>
+                        <option value="Gate Keeper">Gate Keeper</option>
+                        <option value="Marketing">Marketing</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="col-5">
+                    <label asp-for="FirstName" class="form-label"></label>
+                    <span asp-validation-for="FirstName" style="color: red; font-weight: bold;"></span>
+                    <input asp-for="FirstName" class="form-control">
+                </div>
+                <div class="col-5">
+                    <label asp-for="LastName" class="form-label"></label>
+                    <span asp-validation-for="LastName" style="color: red; font-weight: bold;"></span>
+                    <input asp-for="LastName" class="form-control">
+                </div>
             </div>
-            <div>
-                <label asp-for="ZipCode" class="form-label"></label>
-                <span asp-validation-for="ZipCode" style="color: red; font-weight: bold;"></span>
-                <input asp-for="ZipCode" class="form-control">
+            <div class="row">
+                <div class="col-3">
+                    <label asp-for="PhoneNumber" class="form-label"></label>
+                    <span asp-validation-for="PhoneNumber" style="color: red; font-weight: bold;"></span>
+                    <input asp-for="PhoneNumber" class="form-control">
+                </div>
+                <div class="col-6">
+                    <label asp-for="Email" class="form-label"></label>
+                    <span asp-validation-for="Email" style="color: red; font-weight: bold;"></span>
+                    <input asp-for="Email" class="form-control">
+                </div>
             </div>
             <button type="submit" class="btn btn-outline-success">Add Business</button>
         </form>

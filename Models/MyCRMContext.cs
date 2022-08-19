@@ -15,6 +15,8 @@ public class MyCRMContext : DbContext
 
     public DbSet<Business> Businesses {get; set;}
 
+    public DbSet<Staff> Staff {get; set;}
+
     public DbSet<Note> Notes {get; set;}
 
     public DbSet<Address> Addresses {get; set;}

@@ -16353,11 +16353,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\Views\\Admin\\_Register.cshtml",
-      "TargetPath": "Views\\Admin\\_Register.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\Views\\CRM\\Dashboard.cshtml",
       "TargetPath": "Views\\CRM\\Dashboard.cshtml",
       "FileKind": "mvc"

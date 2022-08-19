@@ -11,8 +11,8 @@ using MyCRM.Models;
 namespace MyCRM.Migrations
 {
     [DbContext(typeof(MyCRMContext))]
-    [Migration("20220818200654_FirstMigration")]
-    partial class FirstMigration
+    [Migration("20220819181145_Two")]
+    partial class Two
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -134,10 +134,6 @@ namespace MyCRM.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<string>("BusinessOwner")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime(6)");
 
@@ -245,6 +241,47 @@ namespace MyCRM.Migrations
                     b.HasIndex("ProductId");
 
                     b.ToTable("Purchases");
+                });
+
+            modelBuilder.Entity("MyCRM.Models.Staff", b =>
+                {
+                    b.Property<int>("StaffId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<int>("BusinessId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<int>("Number")
+                        .HasColumnType("int");
+
+                    b.Property<string>("StaffType")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("datetime(6)");
+
+                    b.HasKey("StaffId");
+
+                    b.HasIndex("BusinessId");
+
+                    b.ToTable("Staff");
                 });
 
             modelBuilder.Entity("MyCRM.Models.User", b =>
@@ -356,6 +393,15 @@ namespace MyCRM.Migrations
                     b.Navigation("Product");
                 });
 
+            modelBuilder.Entity("MyCRM.Models.Staff", b =>
+                {
+                    b.HasOne("MyCRM.Models.Business", null)
+                        .WithMany("Staff")
+                        .HasForeignKey("BusinessId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("MyCRM.Models.Business", b =>
                 {
                     b.Navigation("AddressList");
@@ -363,6 +409,8 @@ namespace MyCRM.Migrations
                     b.Navigation("PurchaseList");
 
                     b.Navigation("SpecialNotes");
+
+                    b.Navigation("Staff");
 
                     b.Navigation("UsersWorkedWith");
                 });

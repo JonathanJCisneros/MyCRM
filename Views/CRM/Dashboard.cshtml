@@ -13,35 +13,65 @@
     </head>
     <body style="margin: 0px auto; padding: 0px;">
         <div style="display: flex; align-items: center; justify-content: space-between;">
-            <h1>Welcome, @Context.Session.GetString("Name")</h1>
-            <a asp-controller="User" asp-action="Logout" class="btn btn-outline-danger">Log Out</a>
+            <h1 class="dashboardTitle">Welcome, @Context.Session.GetString("Name")</h1>
+            <div>
+                <a asp-controller="CRM" asp-action="NewBusiness" class="btn btn-outline-primary">Add a Business</a>
+                <a asp-controller="User" asp-action="Logout" class="btn btn-outline-danger">Log Out</a>
+            </div>
+            
         </div>
-        <a asp-controller="CRM" asp-action="NewBusiness" class="btn btn-outline-primary">Add a Client</a>
+        
 
         <table class="table table-hover">
             <thead>
                 <tr>
-                    <th scope="col">Business Name</th>
-                    <th scope="col">Client Name</th>
-                    <th scope="col">Last Activity</th>
-                    <th scope="col">Actions</th>
+                    <th scope="col" class="thead">Business Name</th>
+                    <th scope="col" class="thead">Point of Contact</th>
+                    <th scope="col" class="thead">Last Activity</th>
+                    <th scope="col" class="thead">Actions</th>
                 </tr>
             </thead>
             <tbody>
                 @foreach (Business b in Model)
                 {
                     <tr>
-                        <td>@b.BusinessName</td>
-                        <td>@b.BusinessOwner</td>
+                        <td class="tbody" style="padding: 0px; "><p style="margin-top: 7px; padding-bottom: 0px; font-weight: bold;">@b.BusinessName</p></td>
+                        <td class="tbody" style="padding: 0px;"><p style="margin-top: 7px; font-weight: bold; padding-bottom: 0px;">@b.StaffList[0].FirstName @b.StaffList[0].LastName</p></td>
                         @if(@b.UsersWorkedWith.Count > 0)
                         {
-                            <td>@b.UsersWorkedWith[0].ActivityType @b.UsersWorkedWith[0].CreatedAt</td>
+                            <td class="tbody" style="padding: 0px;">
+                                <div class="tActivity">
+                                    @if(b.UsersWorkedWith[b.UsersWorkedWith.Count - 1].ActivityType == "Phone Call")
+                                    {
+                                        <div class="img">
+                                            <img src="~/images/Activity/PhoneCall.svg" alt="ai" id="img">
+                                        </div>
+                                    }
+                                    @if(b.UsersWorkedWith[0].ActivityType == "Email")
+                                    {
+                                        <div class="img">
+                                            <img src="~/images/Activity/Email.svg" alt="ai" id="img">
+                                        </div>
+                                    }
+                                    @if(b.UsersWorkedWith[0].ActivityType == "Presentation")
+                                    {
+                                        <div class="img">
+                                            <img src="~/images/Activity/Presentation.svg" alt="ai" id="img">
+                                        </div>
+                                    }
+                                    <p style="font-weight: bold;">@b.UsersWorkedWith[0].CreatedAt.ToString("MM/d @ h:mm tt")</p>
+                                </div>
+                            </td>
                         }
                         else
                         {
-                            <td>No activity yet</td>
+                            <td class="tbody">No activity yet</td>
                         }
-                        <td><a asp-controller="CRM" asp-action="ViewOne"  asp-route-businessId=@b.BusinessId class="btn btn-outline-primary">View</a><a asp-controller="CRM" asp-action="DeleteOne"  asp-route-businessId="@b.BusinessId" class="btn btn-outline-danger">Delete</a></td>
+                        <td class="actions" >
+                            <a asp-controller="CRM" asp-action="ViewOne"  asp-route-businessId=@b.BusinessId class="btn btn-outline-primary">View</a>
+                            <span></span>
+                            <a asp-controller="CRM" asp-action="DeleteOne"  asp-route-businessId="@b.BusinessId" class="btn btn-outline-danger">Delete</a>
+                        </td>
                     </tr>
                 }
             </tbody>
