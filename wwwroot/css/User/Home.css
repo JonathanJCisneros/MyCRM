@@ -1,0 +1,15 @@
+* {
+    margin: 0px auto;
+    padding: 0px;
+}
+
+.title {
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#switch {
+    text-align: center;
+}

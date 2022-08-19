@@ -12,12 +12,12 @@
         <link rel="stylesheet" href="~/MeetUpCenter.styles.css" asp-append-version="true" />
     </head>
     <body>
-        <form asp-controller="User" asp-action="Login" method="POST">
-            <h1>Login</h1>
+        <form asp-controller="User" asp-action="Login" method="POST" class="loginForm">
+            <h1 class="loginTitle">Login</h1>
             <div>
                 <label asp-for="LoginEmail" class="form-label"></label>
                 <span asp-validation-for="LoginEmail" style="color: red; font-weight: bold;"></span>
-                <input asp-for="LoginEmail" class="form-control">
+                <input asp-for="LoginEmail" class="form-control loginEmail" >
             </div>
             <div>
                 <label asp-for="LoginPassword" class="form-label"></label>
