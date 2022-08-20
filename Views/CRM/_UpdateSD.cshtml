@@ -1,0 +1,26 @@
+@model Business
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/css/CRM/_UpdateSD.css"/>
+        <link rel="stylesheet" href="~/MeetUpCenter.styles.css" asp-append-version="true" />
+    </head>
+    <body>
+        <form asp-controller="CRM" asp-action="UpdateBusinessStartDate" asp-route-businessId="@ViewBag.OneBusiness.BusinessId" method="POST">
+            <div style="display: flex;">
+                <span asp-validation-for="StartDate" style="color: red; font-weight: bold;"></span>
+                <input type="date" asp-for="StartDate" class="form-control" value="@ViewBag.OneBusiness.StartDate.ToString("YYYY-MM-DD")" id="SDinput">
+                <button type="submit" class="btn btn-link">Update</button>
+            </div>
+        </form>
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+    </body>
+</html>

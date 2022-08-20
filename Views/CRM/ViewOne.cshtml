@@ -12,10 +12,18 @@
         <link rel="stylesheet" href="~/MeetUpCenter.styles.css" asp-append-version="true" />
     </head>
     <body>
-        <div style="min-height: 100vh;">
-            <div style="display: flex; align-items: center; justify-content: space-between;">
-                <h1 class="bname">@ViewBag.OneBusiness.BusinessName</h1>
-                <div style="display: flex; align-items: center; margin-right: 15px;">
+        <div class="ViewOneBody">
+            <div class="ViewOneHeader">
+                <div>
+                    <div onmouseover="editName(this)" onmouseout="removeName(this)" id="BN">
+                        <h1 class="bname">@ViewBag.OneBusiness.BusinessName</h1>
+                        <button class="btn btn-link" id="editor" onclick="switchName('BN','BNUpdate')">edit</button>
+                    </div>
+                    <div id="BNUpdate">
+                        <partial name="_UpdateBName"></partial>
+                    </div>
+                </div>
+                <div class="HRight">
                     <a asp-controller="CRM" asp-action="Presentation"  asp-route-businessId="@ViewBag.oneBusiness.BusinessId" class="btn btn-outline-success">Presentation</a>
                     <span></span>
                     <a asp-controller="CRM" asp-action="Dashboard" class="btn btn-outline-primary">Dashboard</a>
@@ -23,16 +31,21 @@
                     <a asp-controller="User" asp-action="Logout" class="btn btn-outline-danger">Log Out</a>
                 </div>
             </div>
-            <div style="display: flex; margin-left: 15px;">
-                <div style="width: 80%;">
-                    <h1>Owner: @ViewBag.OneBusiness.StaffList[0].FirstName @ViewBag.OneBusiness.StaffList[0].LastName</h1>
-                    <h2>Founded in: @ViewBag.OneBusiness.StartDate.ToString("MMMM d, yyyy")</h2>
+            <div class="ViewOneContainer">
+                <div class="ContainerLeft">
+                    <h1>Owner: 
+                        <span>@ViewBag.OneBusiness.StaffList[0].FirstName @ViewBag.OneBusiness.StaffList[0].LastName</span>
+                    </h1>
+                    <h2>Founded in: 
+                        <span id="SD" onmouseover="editSD(this)" onmouseout="removeSD(this)">@ViewBag.OneBusiness.StartDate.ToString("MMMM d, yyyy")<button class="btn btn-link" id="editSD" onclick="switchName('SD','USD')">edit</button></span>
+                        <span id="USD"><partial name="_UpdateSD"></partial></span>
+                    </h2>
                     <h4>Industry: @ViewBag.OneBusiness.Industry</h4>
                     
                     <h4>Location</h4>
                     @foreach (Address a in ViewBag.OneBusiness.AddressList)
                     {
-                        <p style="margin: 0px;">@a.Street</p>
+                        <p id="ViewOneStreet">@a.Street</p>
                         <p>@a.City, @a.State @a.ZipCode</p>
                     }
                     @foreach (Note n in ViewBag.OneBusiness.SpecialNotes)
@@ -40,23 +53,52 @@
                         <p>@n.SpecialNote</p>
                         <p>@n.CreatedAt</p>
                     }
-                    <div style="width: 450px; margin-left: 0px">
+                    <div id="SNotes">
                         <partial name="_SpecialNotes"></partial>
                     </div>
                     <div>
                         <h4>Purchases</h4>
+                        
                         @foreach (Purchase p in ViewBag.OneBusiness.PurchaseList)
                         {
                             <p>@p.Product.Name</p>
                         }
                     </div>
                 </div>
-                <div style="width: 20%;">
+                <div class="ContainerRight">
                     <partial name="_ClientActivity"></partial>
                 </div>
             
             </div>
         </div>
+        <script>
+            function editName(){
+                let appear = document.getElementById('editor')
+                appear.style.display = "block"
+            }
+
+            function removeName(){
+                let disappear = document.getElementById('editor')
+                setTimeout(function(){disappear.style.display = "none"}, 3000);
+            }
+
+            function editSD(){
+                let appear = document.getElementById('editSD')
+                appear.style.display = "block"
+            }
+
+            function removeSD(){
+                let disappear = document.getElementById('editSD')
+                setTimeout(function(){disappear.style.display = "none"}, 3000);
+            }
+
+            function switchName(dis,up){
+                let disappear = document.getElementById(dis)
+                let update = document.getElementById(up)
+                disappear.style.display = "none";
+                update.style.display = "block";
+            }
+        </script>
         <script src="~/lib/jquery/dist/jquery.min.js"></script>
         <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script src="~/js/site.js" asp-append-version="true"></script>

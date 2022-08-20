@@ -196,4 +196,37 @@ public class CRMController : Controller
         db.SaveChanges();
         return RedirectToAction("ViewOne", new {businessId = businessId});
     }
+
+    [HttpPost("/client/bname/update/{businessId}")]
+    public IActionResult UpdateBusinessName(int businessId, Business updateBusiness)
+    {
+        Business? business = db.Businesses.FirstOrDefault(b => b.BusinessId == businessId);
+
+        if(business == null)
+        {
+            RedirectToAction("Dashboard");
+        }
+
+        business.BusinessName = updateBusiness.BusinessName;
+
+        db.Businesses.Update(business);
+        db.SaveChanges();
+        return RedirectToAction("ViewOne", new {businessId = business.BusinessId});
+    }
+    [HttpPost("/client/sd/update/{businessId}")]
+    public IActionResult UpdateBusinessStartDate(int businessId, Business updateBusiness)
+    {
+        Business? business = db.Businesses.FirstOrDefault(b => b.BusinessId == businessId);
+
+        if(business == null)
+        {
+            RedirectToAction("Dashboard");
+        }
+
+        business.StartDate = updateBusiness.StartDate;
+
+        db.Businesses.Update(business);
+        db.SaveChanges();
+        return RedirectToAction("ViewOne", new {businessId = business.BusinessId});
+    }
 }

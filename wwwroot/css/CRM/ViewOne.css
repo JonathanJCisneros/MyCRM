@@ -3,8 +3,80 @@
     padding: 5px;
 }
 
+.ViewOneBody{
+    min-height: 100vh;
+}
+
+.ViewOneHeader{
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+}
+
+#editor{
+    display: none;
+}
+
+#BN{
+    display: flex;
+}
+
 .bname {
     font-weight: bold;
     font-size: 70px;
     margin-left: 15px;
+}
+
+#test{
+    display: none;
+}
+
+#BNUpdate{
+    display: none;
+}
+
+.HRight{
+    display: flex; 
+    align-items: center; 
+    margin-right: 15px;
+}
+
+.ViewOneContainer{
+    display: flex; 
+    margin-left: 15px;
+}
+
+.ContainerLeft{
+    width: 80%;
+}
+
+#ViewOneStreet{
+    margin: 0px;
+}
+
+#SNotes{
+    width: 450px; 
+    margin-left: 0px
+}
+
+.ContainerLeft h2{
+    display: flex;
+}
+
+.ContainerRight{
+    width: 20%;
+}
+
+#SD{
+    display: flex;
+    margin-left: 7px;
+}
+
+#USD{
+    display: none;
+    margin-left: 7px;
+}
+
+#editSD{
+    display: none;
 }
