@@ -51,6 +51,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXF9DbGllbnRBY3Rpdml0eS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/jonat/OneDrive/Documents/Coding Dojo/Projects/MyCRM/Views/CRM/_Facebook.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXF9GYWNlYm9vay5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/OneDrive/Documents/Coding Dojo/Projects/MyCRM/Views/CRM/_Instagram.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXF9JbnN0YWdyYW0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/jonat/OneDrive/Documents/Coding Dojo/Projects/MyCRM/Views/CRM/_Purchase.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXF9QdXJjaGFzZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -61,6 +69,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/jonat/OneDrive/Documents/Coding Dojo/Projects/MyCRM/Views/CRM/_UpdateBName.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXF9VcGRhdGVCTmFtZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonat/OneDrive/Documents/Coding Dojo/Projects/MyCRM/Views/CRM/_UpdateI.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXF9VcGRhdGVJLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/jonat/OneDrive/Documents/Coding Dojo/Projects/MyCRM/Views/CRM/_UpdateSD.cshtml]

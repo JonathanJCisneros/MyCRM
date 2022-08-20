@@ -229,4 +229,21 @@ public class CRMController : Controller
         db.SaveChanges();
         return RedirectToAction("ViewOne", new {businessId = business.BusinessId});
     }
+
+    [HttpPost("/client/i/update/{businessId}")]
+    public IActionResult UpdateBusinessIndustry(int businessId, Business updateBusiness)
+    {
+        Business? business = db.Businesses.FirstOrDefault(b => b.BusinessId == businessId);
+
+        if(business == null)
+        {
+            RedirectToAction("Dashboard");
+        }
+
+        business.Industry = updateBusiness.Industry;
+
+        db.Businesses.Update(business);
+        db.SaveChanges();
+        return RedirectToAction("ViewOne", new {businessId = business.BusinessId});
+    }
 }

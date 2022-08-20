@@ -10,6 +10,14 @@
         <link rel="stylesheet" href="~/MeetUpCenter.styles.css" asp-append-version="true" />
     </head>
     <body>
+            <h1 class="presentation Title">@ViewBag.OneBusiness.BusinessName</h1>
+        </div>
+        <div class="SocialMedia">
+            <partial name="_FaceBook"></partial>
+            <partial name="_Instagram"></partial>
+            <div>youtube</div>
+        </div>
+        
 
         <partial name="_Purchase"></partial>
         <script src="~/lib/jquery/dist/jquery.min.js"></script>

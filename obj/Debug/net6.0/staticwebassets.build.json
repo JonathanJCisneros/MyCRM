@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "P8DaKOi6y4StPOXprSunTTrJEuiTnBiEzAeGVdDeahQ=",
+  "Hash": "wMvfglJ8k/wUdnfMwfR1Tds2k9GutUrp/vS3E7kxri8=",
   "Source": "MyCRM",
   "BasePath": "_content/MyCRM",
   "Mode": "Default",
@@ -102,6 +102,23 @@
       "OriginalItemSpec": "wwwroot\\css\\CRM\\_ClientActivity.css"
     },
     {
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\css\\CRM\\_Instagram.css",
+      "SourceId": "MyCRM",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "BasePath": "_content/MyCRM",
+      "RelativePath": "css/CRM/_Instagram.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\CRM\\_Instagram.css"
+    },
+    {
       "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\css\\CRM\\_Purchase.css",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
@@ -151,6 +168,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\CRM\\_UpdateBName.css"
+    },
+    {
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\css\\CRM\\_UpdateI.css",
+      "SourceId": "MyCRM",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "BasePath": "_content/MyCRM",
+      "RelativePath": "css/CRM/_UpdateI.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\CRM\\_UpdateI.css"
     },
     {
       "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\css\\CRM\\_UpdateSD.css",
@@ -338,6 +372,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\Activity\\Presentation.svg"
+    },
+    {
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\images\\Industries\\Automotive.png",
+      "SourceId": "MyCRM",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "BasePath": "_content/MyCRM",
+      "RelativePath": "images/Industries/Automotive.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Industries\\Automotive.png"
     },
     {
       "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\js\\site.js",

@@ -25,6 +25,8 @@
     font-weight: bold;
     font-size: 70px;
     margin-left: 15px;
+    display: flex;
+    align-items: center;
 }
 
 #test{
@@ -79,4 +81,34 @@
 
 #editSD{
     display: none;
+}
+
+#I{
+    display: flex;
+    margin-left: 7px;
+    justify-content: flex-start;
+}
+
+#UI {
+    display: none;
+    margin-left: 7px;
+}
+
+#editI{
+    display: none;
+    margin: 0px;
+}
+
+#editN{
+    display: none;
+    margin-left: 7px;
+}
+
+#SNotes{
+    display: none;
+}
+
+.notes{
+    width: 100px;
+    margin-left: 0px;
 }

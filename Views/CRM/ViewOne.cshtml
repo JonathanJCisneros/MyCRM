@@ -15,13 +15,13 @@
         <div class="ViewOneBody">
             <div class="ViewOneHeader">
                 <div>
-                    <div onmouseover="editName(this)" onmouseout="removeName(this)" id="BN">
-                        <h1 class="bname">@ViewBag.OneBusiness.BusinessName</h1>
-                        <button class="btn btn-link" id="editor" onclick="switchName('BN','BNUpdate')">edit</button>
-                    </div>
-                    <div id="BNUpdate">
-                        <partial name="_UpdateBName"></partial>
-                    </div>
+                    <h1 class="bname">
+                        <span onmouseover="editName(this)" onmouseout="removeName(this)" id="BN">
+                            @ViewBag.OneBusiness.BusinessName
+                            <button class="btn btn-link" id="editor" onclick="switchName('BN','BNUpdate')">edit</button>
+                        </span>
+                        <span id="BNUpdate"><partial name="_UpdateBName"></partial></span>
+                    </h1>
                 </div>
                 <div class="HRight">
                     <a asp-controller="CRM" asp-action="Presentation"  asp-route-businessId="@ViewBag.oneBusiness.BusinessId" class="btn btn-outline-success">Presentation</a>
@@ -36,11 +36,20 @@
                     <h1>Owner: 
                         <span>@ViewBag.OneBusiness.StaffList[0].FirstName @ViewBag.OneBusiness.StaffList[0].LastName</span>
                     </h1>
-                    <h2>Founded in: 
-                        <span id="SD" onmouseover="editSD(this)" onmouseout="removeSD(this)">@ViewBag.OneBusiness.StartDate.ToString("MMMM d, yyyy")<button class="btn btn-link" id="editSD" onclick="switchName('SD','USD')">edit</button></span>
+                    <h2 >Founded in: 
+                        <span id="SD" onmouseover="editSD(this)" onmouseout="removeSD(this)">
+                            @ViewBag.OneBusiness.StartDate.ToString("MMMM d, yyyy")
+                            <button class="btn btn-link" id="editSD" onclick="switchName('SD','USD')">edit</button>
+                        </span>
                         <span id="USD"><partial name="_UpdateSD"></partial></span>
                     </h2>
-                    <h4>Industry: @ViewBag.OneBusiness.Industry</h4>
+                    <h4 style="display: flex; align-items: center; margin:0px;">Industry: 
+                        <span id="I" style="align-items: center;" onmouseover="editI(this)" onmouseout="removeI(this)">
+                            @ViewBag.OneBusiness.Industry
+                            <button class="btn btn-link" id="editI" onclick="switchName('I','UI')">edit</button>
+                        </span>
+                        <span id="UI"><partial name="_UpdateI"></partial></span>
+                    </h4>
                     
                     <h4>Location</h4>
                     @foreach (Address a in ViewBag.OneBusiness.AddressList)
@@ -48,13 +57,21 @@
                         <p id="ViewOneStreet">@a.Street</p>
                         <p>@a.City, @a.State @a.ZipCode</p>
                     }
-                    @foreach (Note n in ViewBag.OneBusiness.SpecialNotes)
-                    {
-                        <p>@n.SpecialNote</p>
-                        <p>@n.CreatedAt</p>
-                    }
-                    <div id="SNotes">
-                        <partial name="_SpecialNotes"></partial>
+                    <h2 class="notes" onmouseover="editN(this)" onmouseout="removeN(this)">
+                        Notes 
+                        <span><button class="btn btn-link" id="editN" onclick="notes()">edit</button></span>
+                    </h2>
+                    <div style="display: flex;">
+                        <div style="margin-left: 0px;">
+                            @foreach (Note n in ViewBag.OneBusiness.SpecialNotes)
+                            {
+                                <p style="margin: 0px;">@n.SpecialNote</p>
+                                <p>@n.CreatedAt.ToString("M/d @ h:mm tt")</p>
+                            }
+                        </div>
+                        <span id="SNotes">
+                            <partial name="_SpecialNotes"></partial>
+                        </span>
                     </div>
                     <div>
                         <h4>Purchases</h4>
@@ -90,6 +107,31 @@
             function removeSD(){
                 let disappear = document.getElementById('editSD')
                 setTimeout(function(){disappear.style.display = "none"}, 3000);
+            }
+
+            function editI(){
+                let appear = document.getElementById('editI')
+                appear.style.display = "block"
+            }
+
+            function removeI(){
+                let disappear = document.getElementById('editI')
+                setTimeout(function(){disappear.style.display = "none"}, 3000);
+            }
+
+            function editN(){
+                let appear = document.getElementById('editN')
+                appear.style.display = "block"
+            }
+
+            function removeN(){
+                let disappear = document.getElementById('editN')
+                setTimeout(function(){disappear.style.display = "none"}, 3000);
+            }
+
+            function notes(){
+                let appear = document.getElementById("SNotes")
+                appear.style.display = "block";
             }
 
             function switchName(dis,up){
