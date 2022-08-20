@@ -14,11 +14,11 @@
     <body>
         <form asp-controller="CRM" asp-action="AddSpecialNote" asp-route-businessId="@ViewBag.OneBusiness.BusinessId" method="POST">
             <div>
-                <label asp-for="SpecialNote"></label>
+                <label class="form-label">Add Note</label>
                 <span asp-validation-for="SpecialNote"></span>
-                <input asp-for="SpecialNote">
+                <textarea asp-for="SpecialNote" class="form-control" rows="5" cols="10"></textarea>
             </div>
-            <button type="submit">Note</button>
+            <button type="submit" class="btn btn-outline-primary">Note</button>
         </form>
     </body>
 </html>

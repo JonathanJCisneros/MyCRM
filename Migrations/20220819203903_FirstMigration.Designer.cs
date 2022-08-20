@@ -11,8 +11,8 @@ using MyCRM.Models;
 namespace MyCRM.Migrations
 {
     [DbContext(typeof(MyCRMContext))]
-    [Migration("20220819181145_Two")]
-    partial class Two
+    [Migration("20220819203903_FirstMigration")]
+    partial class FirstMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -39,6 +39,9 @@ namespace MyCRM.Migrations
 
                     b.Property<string>("Notes")
                         .HasColumnType("longtext");
+
+                    b.Property<int>("StaffId")
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("UpdatedAt")
                         .HasColumnType("datetime(6)");
@@ -267,8 +270,8 @@ namespace MyCRM.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<int>("Number")
-                        .HasColumnType("int");
+                    b.Property<long>("PhoneNumber")
+                        .HasColumnType("bigint");
 
                     b.Property<string>("StaffType")
                         .IsRequired()
@@ -396,7 +399,7 @@ namespace MyCRM.Migrations
             modelBuilder.Entity("MyCRM.Models.Staff", b =>
                 {
                     b.HasOne("MyCRM.Models.Business", null)
-                        .WithMany("Staff")
+                        .WithMany("StaffList")
                         .HasForeignKey("BusinessId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -410,7 +413,7 @@ namespace MyCRM.Migrations
 
                     b.Navigation("SpecialNotes");
 
-                    b.Navigation("Staff");
+                    b.Navigation("StaffList");
 
                     b.Navigation("UsersWorkedWith");
                 });

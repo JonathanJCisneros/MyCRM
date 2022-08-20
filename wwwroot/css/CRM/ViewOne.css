@@ -1,0 +1,10 @@
+* {
+    margin: 0px auto;
+    padding: 5px;
+}
+
+.bname {
+    font-weight: bold;
+    font-size: 70px;
+    margin-left: 15px;
+}

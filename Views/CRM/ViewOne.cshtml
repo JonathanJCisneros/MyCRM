@@ -12,37 +12,51 @@
         <link rel="stylesheet" href="~/MeetUpCenter.styles.css" asp-append-version="true" />
     </head>
     <body>
-        <div style="display: flex; align-items: center; justify-content: space-between;">
-            <h1>@ViewBag.OneBusiness.BusinessName</h1>
-            <div style="display: flex; align-items: center;">
-                <a asp-controller="CRM" asp-action="Dashboard" class="btn btn-outline-primary">Dashboard</a>
-                <a asp-controller="User" asp-action="Logout" class="btn btn-outline-danger">Log Out</a>
+        <div style="min-height: 100vh;">
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+                <h1 class="bname">@ViewBag.OneBusiness.BusinessName</h1>
+                <div style="display: flex; align-items: center; margin-right: 15px;">
+                    <a asp-controller="CRM" asp-action="Presentation"  asp-route-businessId="@ViewBag.oneBusiness.BusinessId" class="btn btn-outline-success">Presentation</a>
+                    <span></span>
+                    <a asp-controller="CRM" asp-action="Dashboard" class="btn btn-outline-primary">Dashboard</a>
+                    <span></span>
+                    <a asp-controller="User" asp-action="Logout" class="btn btn-outline-danger">Log Out</a>
+                </div>
+            </div>
+            <div style="display: flex; margin-left: 15px;">
+                <div style="width: 80%;">
+                    <h1>Owner: @ViewBag.OneBusiness.StaffList[0].FirstName @ViewBag.OneBusiness.StaffList[0].LastName</h1>
+                    <h2>Founded in: @ViewBag.OneBusiness.StartDate.ToString("MMMM d, yyyy")</h2>
+                    <h4>Industry: @ViewBag.OneBusiness.Industry</h4>
+                    
+                    <h4>Location</h4>
+                    @foreach (Address a in ViewBag.OneBusiness.AddressList)
+                    {
+                        <p style="margin: 0px;">@a.Street</p>
+                        <p>@a.City, @a.State @a.ZipCode</p>
+                    }
+                    @foreach (Note n in ViewBag.OneBusiness.SpecialNotes)
+                    {
+                        <p>@n.SpecialNote</p>
+                        <p>@n.CreatedAt</p>
+                    }
+                    <div style="width: 450px; margin-left: 0px">
+                        <partial name="_SpecialNotes"></partial>
+                    </div>
+                    <div>
+                        <h4>Purchases</h4>
+                        @foreach (Purchase p in ViewBag.OneBusiness.PurchaseList)
+                        {
+                            <p>@p.Product.Name</p>
+                        }
+                    </div>
+                </div>
+                <div style="width: 20%;">
+                    <partial name="_ClientActivity"></partial>
+                </div>
+            
             </div>
         </div>
-        <a asp-controller="CRM" asp-action="Presentation"  asp-route-businessId="@ViewBag.oneBusiness.BusinessId">Presentation</a>
-        <h1>@ViewBag.OneBusiness.BusinessName</h1>
-        <h2>@ViewBag.OneBusiness.StaffList[0].FirstName</h2>
-        <h3>@ViewBag.OneBusiness.StartDate</h3>
-        <h4>@ViewBag.OneBusiness.Industry</h4>
-        
-        <h4>Address List</h4>
-        @foreach (Address a in ViewBag.OneBusiness.AddressList)
-        {
-            <p>@a.Street</p>
-            <p>@a.City, @a.State @a.ZipCode</p>
-        }
-        @foreach (Note n in ViewBag.OneBusiness.SpecialNotes)
-        {
-            <p>@n.SpecialNote</p>
-            <p>@n.CreatedAt</p>
-        }
-
-        @foreach (Purchase p in ViewBag.OneBusiness.PurchaseList)
-        {
-            <p>@p.Product.Name</p>
-        }
-        <partial name="_SpecialNotes"></partial>
-        <partial name="_ClientActivity"></partial>
         <script src="~/lib/jquery/dist/jquery.min.js"></script>
         <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script src="~/js/site.js" asp-append-version="true"></script>

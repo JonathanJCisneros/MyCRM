@@ -96,7 +96,7 @@ public class CRMController : Controller
         };
         db.Addresses.Add(address);
         db.SaveChanges();
-        return ViewOne(business.BusinessId);
+        return RedirectToAction("ViewOne", new {businessId = business.BusinessId});
     }
 
     [HttpGet("/client/{businessId}")]
@@ -113,7 +113,7 @@ public class CRMController : Controller
                 .ThenInclude(a => a.Product)
             .Include(n => n.SpecialNotes)
             .Include(g => g.UsersWorkedWith.OrderBy(a => a.CreatedAt))
-            .ThenInclude(g => g.User)
+                .ThenInclude(g => g.User)
             .FirstOrDefault(e => e.BusinessId == businessId);
         if(OneBusiness == null)
         {
@@ -194,6 +194,6 @@ public class CRMController : Controller
         newPurchase.BusinessId = businessId;
         db.Purchases.Add(newPurchase);
         db.SaveChanges();
-        return ViewOne(businessId);
+        return RedirectToAction("ViewOne", new {businessId = businessId});
     }
 }

@@ -38,6 +38,9 @@ namespace MyCRM.Migrations
                     b.Property<string>("Notes")
                         .HasColumnType("longtext");
 
+                    b.Property<int>("StaffId")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("UpdatedAt")
                         .HasColumnType("datetime(6)");
 
@@ -394,7 +397,7 @@ namespace MyCRM.Migrations
             modelBuilder.Entity("MyCRM.Models.Staff", b =>
                 {
                     b.HasOne("MyCRM.Models.Business", null)
-                        .WithMany("Staff")
+                        .WithMany("StaffList")
                         .HasForeignKey("BusinessId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -408,7 +411,7 @@ namespace MyCRM.Migrations
 
                     b.Navigation("SpecialNotes");
 
-                    b.Navigation("Staff");
+                    b.Navigation("StaffList");
 
                     b.Navigation("UsersWorkedWith");
                 });

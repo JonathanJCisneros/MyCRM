@@ -18,11 +18,16 @@ public class Activity
 
 
     [Required(ErrorMessage = "Please choose one of the following")]
+    [Display(Name = "Action Type")]
     public string ActivityType {get; set;}
 
 
     [MinLength(3, ErrorMessage = "Notes must be at least 3 characters long")]
     public string? Notes {get; set;}
+
+    [Required]
+    [Display(Name = "Spoke with")]
+    public int StaffId {get; set;}
 
 
     public DateTime CreatedAt {get; set;} = DateTime.Now;
@@ -31,4 +36,6 @@ public class Activity
     public User? User {get; set;}
 
     public Business? Business {get; set;}
+
+    public Staff? Staff {get; set;}
 }
