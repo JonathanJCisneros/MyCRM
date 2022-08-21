@@ -50,26 +50,29 @@
                 
             </div>
         </div>
-        <div style="text-align: center; margin-top: 100px; width: 80%;"">
+        <div style="text-align: center; margin-top: 100px; width: 80%;">
             <h1>Choose where you get to be shown</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, laboriosam? Laboriosam omnis at, quae architecto ab quo nam recusandae ipsam ipsa veniam assumenda quas amet tempora saepe delectus sapiente natus?</p>
         </div>
-        <div>
+        <div style="display: flex; margin-bottom: 50px;">
             <img src="~/images/Geotargeting.jpg" alt="Map with radius">
         </div>
-        <h1>Find what best fits:</h1>
-        <div style="display: flex; align-items: center;">
+        <div style="text-align: center;">
+            <h1>Choose what best fits:</h1>
+        </div>
+        <div style="display: flex; align-items: center; width: 80%; margin-top: 50px;">
             @foreach (Product p in ViewBag.Products)
             {
                 <div style="flex: 1;">
                     <h2>@p.Name</h2>
                     <p>@p.Description</p>
-                    <p>@p.Price</p>
+                    <p>$@p.Price per month</p>
                 </div>
             }
-            
         </div>
-        <partial name="_Purchase"></partial>
+        <div style="display: flex; margin-top: 150px; width: 80%; margin-bottom: 250px;">
+            <partial name="_Purchase"></partial>
+        </div>
         <script src="~/lib/jquery/dist/jquery.min.js"></script>
         <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script src="~/js/site.js" asp-append-version="true"></script>
