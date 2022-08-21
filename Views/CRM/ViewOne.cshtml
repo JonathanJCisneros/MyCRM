@@ -33,10 +33,10 @@
             </div>
             <div class="ViewOneContainer">
                 <div class="ContainerLeft">
-                    <h1>Owner: 
-                        <span>@ViewBag.OneBusiness.StaffList[0].FirstName @ViewBag.OneBusiness.StaffList[0].LastName</span>
-                    </h1>
-                    <h2 >Founded in: 
+                    <h1>Owner: @ViewBag.OneBusiness.StaffList[0].FirstName @ViewBag.OneBusiness.StaffList[0].LastName</h1>
+                    <h3>Phone: <a href="tel:@ViewBag.OneBusiness.StaffList[0].PhoneNumber">@ViewBag.OneBusiness.StaffList[0].PhoneNumber</a></h3>
+                    <h3>Email: <a href="mailto:@ViewBag.OneBusiness.StaffList[0].Email">@ViewBag.OneBusiness.StaffList[0].Email</a></h3>
+                    <h2>Founded in: 
                         <span id="SD" onmouseover="editSD(this)" onmouseout="removeSD(this)">
                             @ViewBag.OneBusiness.StartDate.ToString("MMMM d, yyyy")
                             <button class="btn btn-link" id="editSD" onclick="switchName('SD','USD')">edit</button>
@@ -51,15 +51,34 @@
                         <span id="UI"><partial name="_UpdateI"></partial></span>
                     </h4>
                     
-                    <h4>Location</h4>
+                    <h4 class="address" onmouseover="addA(this)" onmouseout="removeA(this)">
+                        Location 
+                        <span><button class="btn btn-link" id="addA" onclick="address()">add</button></span>
+                    </h4>
+                    <div id="newAddress">
+                        <div style="text-align: right;">
+                            <button class="btn btn-link" onclick="close()">close</button>
+                        </div>
+                        <partial name="_Address"></partial>
+                    </div>
                     @foreach (Address a in ViewBag.OneBusiness.AddressList)
                     {
-                        <p id="ViewOneStreet">@a.Street</p>
-                        <p>@a.City, @a.State @a.ZipCode</p>
+                        <div class="locationDetails" onmouseover="addAD(this)" onmouseout="removeAD(this)">
+                            <div>
+                                <p id="ViewOneStreet">@a.Street</p>
+                                <p>@a.City, @a.State @a.ZipCode</p>
+                            </div>
+                            <span id="aOptions">
+                                <div style="margin: 0px;">
+                                    <a asp-controller="CRM" asp-action="DeleteLocation" asp-route-businessId="@ViewBag.OneBusiness.BusinessId" asp-route-addressId="@a.AddressId">delete</a>
+                                </div>
+                            </span>
+                        </div>
+                        
                     }
                     <h2 class="notes" onmouseover="editN(this)" onmouseout="removeN(this)">
                         Notes 
-                        <span><button class="btn btn-link" id="editN" onclick="notes()">edit</button></span>
+                        <span><button class="btn btn-link" id="editN" onclick="notes()">add</button></span>
                     </h2>
                     <div style="display: flex;">
                         <div style="margin-left: 0px;">
@@ -70,6 +89,9 @@
                             }
                         </div>
                         <span id="SNotes">
+                            <div style="text-align: right;">
+                                <button class="btn btn-link" onclick="close('SNotes')">close</button>
+                            </div>
                             <partial name="_SpecialNotes"></partial>
                         </span>
                     </div>
@@ -96,7 +118,7 @@
 
             function removeName(){
                 let disappear = document.getElementById('editor')
-                setTimeout(function(){disappear.style.display = "none"}, 3000);
+                setTimeout(function(){disappear.style.display = "none"}, 2000);
             }
 
             function editSD(){
@@ -106,7 +128,7 @@
 
             function removeSD(){
                 let disappear = document.getElementById('editSD')
-                setTimeout(function(){disappear.style.display = "none"}, 3000);
+                setTimeout(function(){disappear.style.display = "none"}, 2000);
             }
 
             function editI(){
@@ -116,7 +138,7 @@
 
             function removeI(){
                 let disappear = document.getElementById('editI')
-                setTimeout(function(){disappear.style.display = "none"}, 3000);
+                setTimeout(function(){disappear.style.display = "none"}, 2000);
             }
 
             function editN(){
@@ -126,13 +148,44 @@
 
             function removeN(){
                 let disappear = document.getElementById('editN')
-                setTimeout(function(){disappear.style.display = "none"}, 3000);
+                setTimeout(function(){disappear.style.display = "none"}, 2000);
             }
 
             function notes(){
                 let appear = document.getElementById("SNotes")
                 appear.style.display = "block";
             }
+
+            function closeN(ele){
+                let disappear = document.getElementById(ele);
+                disappear.style.display = "none";
+            }
+
+            function addA(){
+                let appear = document.getElementById('addA')
+                appear.style.display = "block"
+            }
+
+            function removeA(){
+                let disappear = document.getElementById('addA')
+                setTimeout(function(){disappear.style.display = "none"}, 2000);
+            }
+
+            function address(){
+                let appear = document.getElementById('newAddress')
+                appear.style.display = "block";
+            }
+
+            function addAD(){
+                let appear = document.getElementById('aOptions')
+                setTimeout(function(){appear.style.display = "block"}, 1000)
+            }
+
+            function removeAD(){
+                let disappear = document.getElementById('aOptions')
+                setTimeout(function(){disappear.style.display = "none"}, 2000);
+            }
+
 
             function switchName(dis,up){
                 let disappear = document.getElementById(dis)

@@ -246,4 +246,32 @@ public class CRMController : Controller
         db.SaveChanges();
         return RedirectToAction("ViewOne", new {businessId = business.BusinessId});
     }
+
+    [HttpPost("/client/a/add/{businessId}")]
+    public IActionResult AddAddress(int businessId, Address newAddress)
+    {
+        newAddress.BusinessId = businessId;
+
+        db.Addresses.Add(newAddress);
+        db.SaveChanges();
+        return RedirectToAction("ViewOne", new {businessId = businessId});
+    }
+
+    [HttpGet("/client/{businessId}/address/{addressId}/delete")]
+    public IActionResult DeleteLocation(int businessId, int addressId)
+    {
+        if(!loggedIn)
+        {
+            return RedirectToAction("Home", "User");
+        }
+        Address? oneLocation = db.Addresses.FirstOrDefault(e => e.AddressId == addressId);
+        if(oneLocation == null)
+        {
+            return RedirectToAction("Dashboard");
+        }
+
+        db.Addresses.Remove(oneLocation);
+        db.SaveChanges();
+        return RedirectToAction("ViewOne", new {businessId = businessId});
+    }
 }

@@ -106,9 +106,53 @@
 
 #SNotes{
     display: none;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 400px;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 20px;
 }
 
 .notes{
     width: 100px;
     margin-left: 0px;
+}
+
+.address{
+    width: 150px;
+    margin-left: 0px;
+    display: flex;
+    align-items: center;
+}
+
+#addA{
+    display: none;
+    margin-left: 7px;
+}
+
+#newAddress{
+    display: none;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 500px;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 20px;
+}
+
+.locationDetails{
+    display: flex; 
+    width: 250px; 
+    margin-left: 0px;
+}
+
+#aOptions{
+    display: none;
 }
