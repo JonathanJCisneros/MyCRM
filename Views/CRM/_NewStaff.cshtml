@@ -1,0 +1,55 @@
+@model Staff
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <form asp-controller="CRM" asp-action="NewStaff" asp-route-businessId="@ViewBag.OneBusiness.BusinessId" method="POST">
+            <h3 style="text-align: center;">Add a new Staff Member</h3>
+            <div class="row">
+                <div class="col-4">
+                    <label asp-for="StaffType" class="form-label"></label>
+                    <span asp-validation-for="StaffType" style="color: red; font-weight: bold;"></span>
+                    <select asp-for="StaffType" class="form-control">
+                        <option value="none" selected disabled hidden>Select</option>
+                        <option value="Owner">Owner</option>
+                        <option value="Gate Keeper">Gate Keeper</option>
+                        <option value="Marketing">Marketing</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <label asp-for="FirstName" class="form-label"></label>
+                    <span asp-validation-for="FirstName" style="color: red; font-weight: bold;"></span>
+                    <input asp-for="FirstName" class="form-control">
+                </div>
+                <div class="col-6">
+                    <label asp-for="LastName" class="form-label"></label>
+                    <span asp-validation-for="LastName" style="color: red; font-weight: bold;"></span>
+                    <input asp-for="LastName" class="form-control">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <label asp-for="PhoneNumber" class="form-label"></label>
+                    <span asp-validation-for="PhoneNumber" style="color: red; font-weight: bold;"></span>
+                    <input asp-for="PhoneNumber" class="form-control">
+                </div>
+                <div class="col-6">
+                    <label asp-for="Email" class="form-label"></label>
+                    <span asp-validation-for="Email" style="color: red; font-weight: bold;"></span>
+                    <input asp-for="Email" class="form-control">
+                </div>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-outline-success">Add Staff</button>
+        </form>
+    </body>
+</html>

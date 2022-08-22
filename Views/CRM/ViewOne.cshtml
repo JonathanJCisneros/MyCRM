@@ -7,9 +7,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>MyCRM - @ViewBag.OneBusiness.BusinessName</title>
-        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
         <link rel="stylesheet" href="~/css/CRM/ViewOne.css" />
-        <link rel="stylesheet" href="~/MeetUpCenter.styles.css" asp-append-version="true" />
     </head>
     <body>
         <div class="ViewOneBody">
@@ -33,53 +32,95 @@
             </div>
             <div class="ViewOneContainer">
                 <div class="ContainerLeft">
-                    <h1>Owner: @ViewBag.OneBusiness.StaffList[0].FirstName @ViewBag.OneBusiness.StaffList[0].LastName</h1>
-                    <h3>Phone: <a href="tel:@ViewBag.OneBusiness.StaffList[0].PhoneNumber">@ViewBag.OneBusiness.StaffList[0].PhoneNumber</a></h3>
-                    <h3>Email: <a href="mailto:@ViewBag.OneBusiness.StaffList[0].Email">@ViewBag.OneBusiness.StaffList[0].Email</a></h3>
-                    <h2>Founded in: 
-                        <span id="SD" onmouseover="editSD(this)" onmouseout="removeSD(this)">
-                            @ViewBag.OneBusiness.StartDate.ToString("MMMM d, yyyy")
-                            <button class="btn btn-link" id="editSD" onclick="switchName('SD','USD')">edit</button>
-                        </span>
-                        <span id="USD"><partial name="_UpdateSD"></partial></span>
-                    </h2>
-                    <h4 style="display: flex; align-items: center; margin:0px;">Industry: 
-                        <span id="I" style="align-items: center;" onmouseover="editI(this)" onmouseout="removeI(this)">
-                            @ViewBag.OneBusiness.Industry
-                            <button class="btn btn-link" id="editI" onclick="switchName('I','UI')">edit</button>
-                        </span>
-                        <span id="UI"><partial name="_UpdateI"></partial></span>
-                    </h4>
-                    
-                    <h4 class="address" onmouseover="addA(this)" onmouseout="removeA(this)">
-                        Location 
-                        <span><button class="btn btn-link" id="addA" onclick="address()">add</button></span>
-                    </h4>
+                    <div>
+                        <h1>Owner: @ViewBag.OneBusiness.StaffList[0].FirstName @ViewBag.OneBusiness.StaffList[0].LastName</h1>
+                    </div>
+                    <div>
+                        <h3>Phone: <a href="tel:@ViewBag.OneBusiness.StaffList[0].PhoneNumber">@ViewBag.OneBusiness.StaffList[0].PhoneNumber</a></h3>
+                    </div>
+                    <div>
+                        <h3>Email: <a href="mailto:@ViewBag.OneBusiness.StaffList[0].Email">@ViewBag.OneBusiness.StaffList[0].Email</a></h3>
+                    </div>
+                    <div>
+                        <div style="display: flex; align-items: center;">
+                            <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" >
+                                <span onmouseover="addS(this)" onmouseout="removeS(this)">Staff</span>
+                            </button>
+                            <button class="btn btn-link" id="addS" onclick="newS()">add</button>
+                            <div id="newStaff">
+                                <partial name="_NewStaff"></partial>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="collapse" id="collapseExample">
+                            <div class="card card-body"  style="width: 550px; margin-left: 0px;">
+                                <div style="display: flex; align-items: center; justify-content: flex-start; margin-left:0px;">
+                                    @foreach (Staff s in ViewBag.oneBusiness.StaffList)
+                                    {   
+                                        <div style="border: 1px solid black; border-radius: 3px; padding: 5px; margin-left: 0px; margin-right:5px">
+                                            <p style="margin: 0px;">@s.StaffType</p>
+                                            <p style="margin: 0px;">@s.FirstName @s.LastName</p>
+                                            <p style="margin: 0px;"><a href="tel:@s.PhoneNumber">@s.PhoneNumber</a></p>
+                                            <p><a href="mailto:@s.Email">@s.Email</a></p>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Founded in: 
+                            <span id="SD" onmouseover="editSD(this)" onmouseout="removeSD(this)">
+                                @ViewBag.OneBusiness.StartDate.ToString("MMMM d, yyyy")
+                                <button class="btn btn-link" id="editSD" onclick="switchName('SD','USD')">edit</button>
+                            </span>
+                            <span id="USD"><partial name="_UpdateSD"></partial></span>
+                        </h2>
+                    </div>
+                    <div>
+                        <h4 style="display: flex; align-items: center; margin:0px;">Industry: 
+                            <span id="I" style="align-items: center;" onmouseover="editI(this)" onmouseout="removeI(this)">
+                                @ViewBag.OneBusiness.Industry
+                                <button class="btn btn-link" id="editI" onclick="switchName('I','UI')">edit</button>
+                            </span>
+                            <span id="UI"><partial name="_UpdateI"></partial></span>
+                        </h4>
+                    </div>
+                    <div>
+                        <h4 class="address" onmouseover="addA(this)" onmouseout="removeA(this)">
+                            Location 
+                            <span><button class="btn btn-link" id="addA" onclick="address()">add</button></span>
+                        </h4>
+                    </div>
                     <div id="newAddress">
                         <div style="text-align: right;">
                             <button class="btn btn-link" onclick="close()">close</button>
                         </div>
                         <partial name="_Address"></partial>
                     </div>
-                    @foreach (Address a in ViewBag.OneBusiness.AddressList)
-                    {
-                        <div class="locationDetails" onmouseover="addAD(this)" onmouseout="removeAD(this)">
-                            <div>
-                                <p id="ViewOneStreet">@a.Street</p>
-                                <p>@a.City, @a.State @a.ZipCode</p>
-                            </div>
-                            <span id="aOptions">
-                                <div style="margin: 0px;">
-                                    <a asp-controller="CRM" asp-action="DeleteLocation" asp-route-businessId="@ViewBag.OneBusiness.BusinessId" asp-route-addressId="@a.AddressId">delete</a>
+                    <div>
+                        @foreach (Address a in ViewBag.OneBusiness.AddressList)
+                        {
+                            <div class="locationDetails" onmouseover="addAD(this)" onmouseout="removeAD(this)">
+                                <div>
+                                    <p id="ViewOneStreet">@a.Street</p>
+                                    <p>@a.City, @a.State @a.ZipCode</p>
                                 </div>
-                            </span>
-                        </div>
-                        
-                    }
-                    <h2 class="notes" onmouseover="editN(this)" onmouseout="removeN(this)">
-                        Notes 
-                        <span><button class="btn btn-link" id="editN" onclick="notes()">add</button></span>
-                    </h2>
+                                <span id="aOptions">
+                                    <div style="margin: 0px;">
+                                        <a asp-controller="CRM" asp-action="DeleteLocation" asp-route-businessId="@ViewBag.OneBusiness.BusinessId" asp-route-addressId="@a.AddressId">delete</a>
+                                    </div>
+                                </span>
+                            </div>
+                            
+                        }
+                    </div>
+                    <div>
+                        <h2 class="notes" onmouseover="editN(this)" onmouseout="removeN(this)">
+                            Notes 
+                            <span><button class="btn btn-link" id="editN" onclick="notes()">add</button></span>
+                        </h2>
+                    </div>
                     <div style="display: flex;">
                         <div style="margin-left: 0px;">
                             @foreach (Note n in ViewBag.OneBusiness.SpecialNotes)
@@ -95,21 +136,30 @@
                             <partial name="_SpecialNotes"></partial>
                         </span>
                     </div>
-                    <div>
-                        <h4>Purchases</h4>
-                        
-                        @foreach (Purchase p in ViewBag.OneBusiness.PurchaseList)
-                        {
-                            <p>@p.Product.Name</p>
-                        }
+                    <div class="purchases">
+                        <p>
+                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample1" aria-expanded="false" aria-controls="collapseWidthExample1">
+                                Purchases
+                            </button>
+                        </p>
+                        <div style="min-height: 120px;">
+                            <div class="collapse collapse" id="collapseWidthExample1">
+                                <div class="card card-body" style="width: 300px;">
+                                    @foreach (Purchase p in ViewBag.OneBusiness.PurchaseList)
+                                    {
+                                        <p>@p.Product.Name at @p.Address.City, @p.Address.State Location </p>
+                                    }
+                                </div>
+                            </div>
+                        </div>                      
                     </div>
                 </div>
                 <div class="ContainerRight">
                     <partial name="_ClientActivity"></partial>
                 </div>
-            
             </div>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
         <script>
             function editName(){
                 let appear = document.getElementById('editor')
@@ -128,6 +178,16 @@
 
             function removeSD(){
                 let disappear = document.getElementById('editSD')
+                setTimeout(function(){disappear.style.display = "none"}, 2000);
+            }
+
+            function addS(){
+                let appear = document.getElementById('addS')
+                setTimeout(function(){appear.style.display = "block"}, 1000)
+            }
+
+            function removeS(){
+                let disappear = document.getElementById('addS')
                 setTimeout(function(){disappear.style.display = "none"}, 2000);
             }
 
@@ -153,7 +213,7 @@
 
             function notes(){
                 let appear = document.getElementById("SNotes")
-                setTimeout(function(){appear.style.display = "block"}, 1000)
+                appear.style.display = "block";
             }
 
             function closeN(ele){
@@ -173,7 +233,7 @@
 
             function address(){
                 let appear = document.getElementById('newAddress')
-                setTimeout(function(){appear.style.display = "block"}, 1000)
+                appear.style.display = "block"
             }
 
             function addAD(){
@@ -186,6 +246,10 @@
                 setTimeout(function(){disappear.style.display = "none"}, 2000);
             }
 
+            function newS(){
+                let appear = document.getElementById('newStaff')
+                appear.style.display = "block"
+            }
 
             function switchName(dis,up){
                 let disappear = document.getElementById(dis)
@@ -194,8 +258,5 @@
                 update.style.display = "block";
             }
         </script>
-        <script src="~/lib/jquery/dist/jquery.min.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="~/js/site.js" asp-append-version="true"></script>
     </body>
 </html>

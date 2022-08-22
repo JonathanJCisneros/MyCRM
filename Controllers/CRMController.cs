@@ -274,4 +274,14 @@ public class CRMController : Controller
         db.SaveChanges();
         return RedirectToAction("ViewOne", new {businessId = businessId});
     }
+
+    [HttpPost("/client/{businessId}/staff/add/")]
+    public IActionResult NewStaff(int businessId, Staff newStaff)
+    {
+        newStaff.BusinessId = businessId;
+
+        db.Staff.Add(newStaff);
+        db.SaveChanges();
+        return RedirectToAction("ViewOne", new {businessId = businessId});
+    }
 }

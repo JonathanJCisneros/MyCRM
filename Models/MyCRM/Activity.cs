@@ -33,9 +33,9 @@ public class Activity
     public DateTime CreatedAt {get; set;} = DateTime.Now;
     public DateTime UpdatedAt {get; set;} = DateTime.Now;
 
-    public User? User {get; set;}
+    public User? User { get; set;}
 
-    public Business? Business {get; set;}
+    public Business? Business { get; set;}
 
-    public Staff? Staff {get; set;}
+    public Staff? Staff { get; set;}
 }
