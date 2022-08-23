@@ -248,7 +248,7 @@ public class CRMController : Controller
         return RedirectToAction("ViewOne", new {businessId = business.BusinessId});
     }
 
-    [HttpPost("/client/a/add/{businessId}")]
+    [HttpPost("/client/{businessId}/address/add")]
     public IActionResult AddAddress(int businessId, Address newAddress)
     {
         newAddress.BusinessId = businessId;
@@ -282,6 +282,18 @@ public class CRMController : Controller
         newStaff.BusinessId = businessId;
 
         db.Staff.Add(newStaff);
+        db.SaveChanges();
+        return RedirectToAction("ViewOne", new {businessId = businessId});
+    }
+
+    [HttpPost("/client/{businessId}/website/edit")]
+    public IActionResult EditWebsite(int businessId, Business editWebsite)
+    {
+        Business? business = db.Businesses.FirstOrDefault(b => b.BusinessId == businessId);
+
+        business.Website = editWebsite.Website;
+
+        db.Businesses.Update(business);
         db.SaveChanges();
         return RedirectToAction("ViewOne", new {businessId = businessId});
     }

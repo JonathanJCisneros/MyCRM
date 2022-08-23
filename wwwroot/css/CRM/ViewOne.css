@@ -246,3 +246,22 @@
 .close {
     text-align: right;
 }
+
+.BW {
+    display: flex;
+}
+
+#W {
+    display: flex;
+    align-items: center;
+    margin-left: 7px;
+}
+
+#WUpdate {
+    display: none;
+    margin-left: 7px;
+}
+
+#editW {
+    display: none;
+}

@@ -1,0 +1,9 @@
+* {
+    margin: 0px auto;
+    padding: 0px;
+}
+
+.WForm {
+    display: flex;
+    align-items: center;
+}
