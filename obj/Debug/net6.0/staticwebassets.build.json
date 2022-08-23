@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/lsjFrO+WM6oDrnn1ERvGvcUgfKl0g0ZSHVm6uXM4qE=",
+  "Hash": "EwDiBfpomJ3NiaxVBMLkWkMc+VW5LwmN1jdAPpF8tWA=",
   "Source": "MyCRM",
   "BasePath": "_content/MyCRM",
   "Mode": "Default",
@@ -408,12 +408,12 @@
       "OriginalItemSpec": "wwwroot\\images\\Geotargeting.jpg"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\images\\GoogleAdNetwrok.png",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\images\\GoogleAdNetwork.png",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
-      "RelativePath": "images/GoogleAdNetwrok.png",
+      "RelativePath": "images/GoogleAdNetwork.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -422,7 +422,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\GoogleAdNetwrok.png"
+      "OriginalItemSpec": "wwwroot\\images\\GoogleAdNetwork.png"
     },
     {
       "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\images\\Industries\\Automotive.png",

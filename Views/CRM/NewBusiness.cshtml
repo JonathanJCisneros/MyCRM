@@ -11,32 +11,32 @@
         <link rel="stylesheet" href="~/css/CRM/NewBusiness.css" />
         <link rel="stylesheet" href="~/MeetUpCenter.styles.css" asp-append-version="true" />
     </head>
-    <body>
-        <div style="display: flex; align-items: center; justify-content: space-between;">
+    <body >
+        <div class="header">
             <h1 class="newBusinessTitle">Add a New Client</h1>
             <div>
                 <a asp-controller="CRM" asp-action="Dashboard" class="btn btn-outline-primary">Dashboard</a>
                 <a asp-controller="User" asp-action="Logout" class="btn btn-outline-danger">Log Out</a>
             </div>
         </div>
-        <form asp-controller="CRM" asp-action="CreateBusiness" method="POST">
-            <h3 style="text-align: center;">Business</h3>
+        <form asp-controller="CRM" asp-action="CreateBusiness" method="POST" class="container">
+            <h3 class="STitle">Business</h3>
             <div class="row">
                 <div class="col">
                     <label asp-for="BusinessName" class="form-label"></label>
-                    <span asp-validation-for="BusinessName" style="color: red; font-weight: bold;"></span>
+                    <span asp-validation-for="BusinessName" class="error"></span>
                     <input asp-for="BusinessName" class="form-control" id="bname">
                 </div>
                 <div class="col-sm-3">
                     <label asp-for="StartDate" class="form-label"></label>
-                    <span asp-validation-for="StartDate" style="color: red; font-weight: bold;"></span>
+                    <span asp-validation-for="StartDate" class="error"></span>
                     <input type="date" asp-for="StartDate" class="form-control" id="date">
                 </div>
             </div>
-            <div>
-                <div>
+            <div class="row">
+                <div class="col">
                     <label asp-for="Industry" class="form-label">Industry</label>
-                    <span asp-validation-for="Industry" style="color: red; font-weight: bold;"></span>
+                    <span asp-validation-for="Industry" class="error"></span>
                     <select asp-for="Industry" class="form-control" id="industry">
                         <option value="none" selected disabled hidden>Select</option>
                         <option value="Automotive">Automotive</option>
@@ -47,22 +47,27 @@
                         <option value="Restaurant">Restaurant</option>
                     </select>
                 </div>
+                <div class="col-8">
+                    <label asp-for="Website" class="form-label"></label>
+                    <span asp-validation-for="Website" class="error"></span>
+                    <input asp-for="Website" class="form-control">
+                </div>
             </div>
-            <h3 style="text-align: center;">Location</h3>
+            <h3 class="STitle">Location</h3>
             <div>
                 <label asp-for="Street" class="form-label"></label>
-                <span asp-validation-for="Street" style="color: red; font-weight: bold;"></span>
+                <span asp-validation-for="Street" class="error"></span>
                 <input asp-for="Street" class="form-control">
             </div>
             <div class="row">
                 <div class="col-sm-5">
                     <label asp-for="City" class="form-label"></label>
-                    <span asp-validation-for="City" style="color: red; font-weight: bold;"></span>
+                    <span asp-validation-for="City" class="error"></span>
                     <input asp-for="City" class="form-control">
                 </div>
                 <div class="col-sm-2">
                     <label asp-for="State" class="form-label"></label>
-                    <span asp-validation-for="State" style="color: red; font-weight: bold;"></span>
+                    <span asp-validation-for="State" class="error"></span>
                     <select asp-for="State" class="form-control">
                         <option >Select</option>
                         <option value="AL">AL</option>
@@ -120,15 +125,15 @@
                 </div>
                 <div class="col-sm-3">
                     <label asp-for="ZipCode" class="form-label"></label>
-                    <span asp-validation-for="ZipCode" style="color: red; font-weight: bold;"></span>
+                    <span asp-validation-for="ZipCode" class="error"></span>
                     <input asp-for="ZipCode" class="form-control">
                 </div>
             </div>
-            <h3 style="text-align: center;">Point of Contact</h3>
+            <h3 class="STitle">Point of Contact</h3>
             <div class="row">
                 <div class="col-2">
                     <label asp-for="StaffType" class="form-label"></label>
-                    <span asp-validation-for="StaffType" style="color: red; font-weight: bold;"></span>
+                    <span asp-validation-for="StaffType" class="error"></span>
                     <select asp-for="StaffType" class="form-control">
                         <option value="none" selected disabled hidden>Select</option>
                         <option value="Owner">Owner</option>
@@ -139,24 +144,24 @@
                 </div>
                 <div class="col-5">
                     <label asp-for="FirstName" class="form-label"></label>
-                    <span asp-validation-for="FirstName" style="color: red; font-weight: bold;"></span>
+                    <span asp-validation-for="FirstName" class="error"></span>
                     <input asp-for="FirstName" class="form-control">
                 </div>
                 <div class="col-5">
                     <label asp-for="LastName" class="form-label"></label>
-                    <span asp-validation-for="LastName" style="color: red; font-weight: bold;"></span>
+                    <span asp-validation-for="LastName" class="error"></span>
                     <input asp-for="LastName" class="form-control">
                 </div>
             </div>
             <div class="row">
                 <div class="col-3">
                     <label asp-for="PhoneNumber" class="form-label"></label>
-                    <span asp-validation-for="PhoneNumber" style="color: red; font-weight: bold;"></span>
+                    <span asp-validation-for="PhoneNumber" class="error"></span>
                     <input asp-for="PhoneNumber" class="form-control">
                 </div>
                 <div class="col-6">
                     <label asp-for="Email" class="form-label"></label>
-                    <span asp-validation-for="Email" style="color: red; font-weight: bold;"></span>
+                    <span asp-validation-for="Email" class="error"></span>
                     <input asp-for="Email" class="form-control">
                 </div>
             </div>

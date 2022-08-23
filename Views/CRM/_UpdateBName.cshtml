@@ -7,17 +7,12 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
         <link rel="stylesheet" href="~/css/CRM/_UpdatebName.css"/>
-        <link rel="stylesheet" href="~/MeetUpCenter.styles.css" asp-append-version="true" />
     </head>
     <body>
         <form asp-controller="CRM" asp-action="UpdateBusinessName" asp-route-businessId="@ViewBag.OneBusiness.BusinessId" method="POST" class="BNForm">
             <input asp-for="BusinessName" class="form-control" value="@ViewBag.OneBusiness.BusinessName" id="BNinput">
             <button type="submit" class="btn btn-link" id="BNSubmit">Update</button>
         </form>
-        <script src="~/lib/jquery/dist/jquery.min.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="~/js/site.js" asp-append-version="true"></script>
     </body>
 </html>

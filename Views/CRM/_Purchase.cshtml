@@ -12,13 +12,13 @@
     </head>
     <body>
         <form asp-controller="CRM" asp-action="AddPurchase" asp-route-businessId="@ViewBag.oneBusiness.BusinessId" method="POST">
-            <div style="text-align: center;">
-                <h1>Time to buy</h1>
+            <div class="formT">
+                <h1>Let's get Started!</h1>
             </div>
-            <div style="display: flex;">
-                <div style="margin-right: 10px;">
+            <div class="row">
+                <div class="col-5">
                     <label asp-for="ProductId" class="form-label"></label>
-                    <span asp-validation-for="ProductId" style="color: red; font-weight: bold;"></span>
+                    <span asp-validation-for="ProductId" class="error"></span>
                     <select asp-for="ProductId" class="form-control">
                         <option>select</option>
                     @foreach (Product p in ViewBag.Products)
@@ -27,9 +27,9 @@
                     }
                     </select>
                 </div>
-                <div style="margin-left: 10px;">
+                <div class="col">
                     <label asp-for="AddressId" class="form-label"></label>
-                    <span asp-validation-for="AddressId" style="color: red; font-weight: bold;"></span>
+                    <span asp-validation-for="AddressId" class="error"></span>
                     <select asp-for="AddressId" class="form-control">
                         <option>select</option>
                     @foreach (Address a in ViewBag.oneBusiness.AddressList)
@@ -42,7 +42,7 @@
                     </select>
                 </div>
             </div>
-            <p style="margin-top: 40px;">
+            <p class="tc">
                 <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                     Terms and Conditions
                 </button>

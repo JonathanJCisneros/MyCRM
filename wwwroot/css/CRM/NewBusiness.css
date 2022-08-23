@@ -3,7 +3,20 @@
     padding: 10px;
 }
 
-.newBusinessTitle{
+.container {
+    width: 60%;
+    box-shadow: 0px 0px 3px black;
+    border-radius: 3px;
+    padding-bottom: 30px;
+}
+
+.header {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+.newBusinessTitle {
     font-weight: bold;
 }
 
@@ -20,4 +33,13 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
     -moz-appearance: textfield;
+}
+
+.error {
+    color: red; 
+    font-weight: bold;
+}
+
+.STitle {
+    text-align: center;
 }

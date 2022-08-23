@@ -3,6 +3,12 @@
     padding: 10px;
 }
 
+.header {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+}
+
 .dashboardTitle{
     font-weight: bold;
 }
@@ -18,6 +24,19 @@
 
 .tbody {
     text-align: center;
+    padding: 0px;
+}
+
+.BName {
+    margin-top: 7px; 
+    padding-bottom: 0px; 
+    font-weight: bold; 
+}
+
+.poc {
+    margin-top: 7px; 
+    font-weight: bold; 
+    padding-bottom: 0px; 
 }
 
 .tActivity {
@@ -52,4 +71,8 @@
 
 .actions {
     text-align: center;
+}
+
+.lastA {
+    font-weight: bold; 
 }

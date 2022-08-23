@@ -17,18 +17,18 @@
             <h1 class="loginTitle">Login</h1>
             <div>
                 <label asp-for="LoginEmail" class="form-label"></label>
-                <span asp-validation-for="LoginEmail" style="color: red; font-weight: bold;"></span>
+                <span asp-validation-for="LoginEmail" class="error"></span>
                 <input asp-for="LoginEmail" class="form-control" >
             </div>
             <div>
                 <label asp-for="LoginPassword" class="form-label"></label>
-                <span asp-validation-for="LoginPassword" style="color: red; font-weight: bold;"></span>
+                <span asp-validation-for="LoginPassword" class="error"></span>
                 <input asp-for="LoginPassword" class="form-control">
             </div>
             <br>
             <button type="submit" class="btn btn-outline-primary">Log In</button>
         </form>
-        <div style="text-align: center; margin-top: 25px;">
+        <div class="RegisterL">
             <a asp-controller="User" asp-action="UserRegister">Don't have an account yet? Sign Up!</a>
         </div>
         

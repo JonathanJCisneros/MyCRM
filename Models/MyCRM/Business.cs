@@ -14,6 +14,9 @@ public class Business
     [Display(Name = "Business Name")]
     public string BusinessName {get; set;}
 
+    [RegularExpression(@"^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\(\)\*\+,;=.]+$", ErrorMessage = "must be a valid website")]
+    public string? Website {get; set;}
+
     [MyDate(ErrorMessage = "must be in the past")]
     [Display(Name = "Date Started or Acquisition")]
     public DateTime? StartDate {get; set;}

@@ -11,7 +11,10 @@ public class NewBusinessForm
     [Display(Name = "Business Name")]
     public string BusinessName {get; set;}
 
-    [Required(ErrorMessage = "is required")]
+    [RegularExpression(@"^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\(\)\*\+,;=.]+$", ErrorMessage = "must be a valid website")]
+    public string? Website {get; set;}
+
+    [Required(ErrorMessage = "required")]
     [Display(Name = "Position")]
     public string StaffType {get; set;}
 

@@ -3,90 +3,129 @@
     padding: 5px;
 }
 
-.ViewOneBody{
+.ViewOneBody {
     min-height: 100vh;
 }
 
-.ViewOneHeader{
+.ViewOneHeader {
     display: flex; 
     align-items: center; 
     justify-content: space-between;
 }
 
-#editor{
+#editor {
     display: none;
 }
 
-#BN{
+#BN {
     display: flex;
 }
 
 .bname {
     font-weight: bold;
-    font-size: 70px;
+    font-size: 75px;
     margin-left: 15px;
     display: flex;
     align-items: center;
 }
 
-#test{
+#test {
     display: none;
 }
 
-#BNUpdate{
+#BNUpdate {
     display: none;
 }
 
-.HRight{
+.HRight {
     display: flex; 
     align-items: center; 
     margin-right: 15px;
 }
 
-.ViewOneContainer{
+.ViewOneContainer {
     display: flex; 
     margin-left: 15px;
 }
 
-.ContainerLeft{
+.ContainerLeft {
     width: 80%;
 }
 
-#ViewOneStreet{
+.StaffS {
+    display: flex; 
+    align-items: center; 
+}
+
+.card {
+    margin-left: 0px;
+}
+
+.cardInfo {
+    display: flex; 
+    align-items: center;
+    margin-left:0px;
+}
+
+.staffDetails {
+    box-shadow: 0px 0px 3px black;
+    border-radius: 3px; 
+    padding: 5px; 
+    margin-left: 0px; 
+    margin-right:5px
+}
+
+.staffDetails p {
     margin: 0px;
 }
 
-#SNotes{
+.industryT {
+    display: flex; 
+    align-items: center; 
+    margin:0px;
+}
+
+.lnbody {
+    display: flex; 
+    margin-top: 50px; 
+}
+
+#ViewOneStreet {
+    margin: 0px;
+}
+
+#SNotes {
     width: 450px; 
     margin-left: 0px
 }
 
-.ContainerLeft h2{
+.ContainerLeft h2 {
     display: flex;
 }
 
-.ContainerRight{
+.ContainerRight {
     width: 20%;
 }
 
-#SD{
+#SD {
     display: flex;
     margin-left: 7px;
 }
 
-#USD{
+#USD {
     display: none;
     margin-left: 7px;
 }
 
-#editSD{
+#editSD {
     display: none;
 }
 
-#I{
+#I {
     display: flex;
     margin-left: 7px;
     justify-content: flex-start;
+    align-items: center;
 }
 
 #UI {
@@ -94,92 +133,116 @@
     margin-left: 7px;
 }
 
-#editI{
+#editI {
     display: none;
     margin: 0px;
 }
 
-#editN{
+#editN {
     display: none;
     margin-left: 7px;
 }
 
-#SNotes{
+#SNotes {
     display: none;
+    background-color: white;
     position: fixed;
     top: 40%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     width: 400px;
-    border: 1px solid black;
+    box-shadow: 0px 0px 3px black;
     border-radius: 3px;
     padding: 20px;
 }
 
-.notes{
+.notes {
     width: 100px;
     margin-left: 0px;
+    display: flex;
+    align-items: center;
 }
 
-.address{
+.address {
     width: 150px;
     margin-left: 0px;
     display: flex;
     align-items: center;
 }
 
-#addA{
+#addA {
     display: none;
     margin-left: 7px;
 }
 
-#newAddress{
+#newAddress {
     display: none;
+    background-color: white;
     position: fixed;
     top: 40%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     width: 500px;
-    border: 1px solid black;
+    box-shadow: 0px 0px 3px black;
     border-radius: 3px;
     padding: 20px;
 }
 
-.locationDetails{
+.locationDetails {
     display: flex; 
-    width: 250px; 
-    margin-left: 0px;
+    min-width: 250px; 
+    margin: 10px;
+    box-shadow: 0px 0px 3px black;
+    border-radius: 3px;
+    padding: 7px;
 }
 
-#aOptions{
+#aOptions {
     display: none;
 }
 
-#addS{
+#addS {
     display: none;
 }
 
-#newStaff{
+#newStaff {
     display: none;
+    background-color: white;
     position: fixed;
     top: 40%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     width: 550px;
-    border: 1px solid black;
+    box-shadow: 0px 0px 3px black;
     border-radius: 3px;
     padding: 20px;
 }
 
-.purchases{
+.purchases {
     position: fixed;
-    top: 15%;
+    top: 150px;
     left: 65%;
+    margin-top: 75px;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     border-radius: 3px;
     padding: 20px;
+}
+
+.noteDetails {
+    margin-left: 25px;
+}
+
+.note {
+    box-shadow: 0px 0px 3px black;
+    border-radius: 3px;
+    padding: 7px;
+    margin: 10px;
+}
+
+.close {
+    text-align: right;
 }

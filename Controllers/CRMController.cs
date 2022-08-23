@@ -68,6 +68,7 @@ public class CRMController : Controller
         Business business = new Business()
         {
             BusinessName = newBusiness.BusinessName,
+            Website = newBusiness.Website,
             StartDate = newBusiness.StartDate,
             Industry = newBusiness.Industry
         };

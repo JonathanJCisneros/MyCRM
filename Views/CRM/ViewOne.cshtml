@@ -19,7 +19,7 @@
                             @ViewBag.OneBusiness.BusinessName
                             <button class="btn btn-link" id="editor" onclick="switchName('BN','BNUpdate')">edit</button>
                         </span>
-                        <span id="BNUpdate"><partial name="_UpdateBName"></partial></span>
+                        <span id="BNUpdate" onmouseout="BNBack(this)"><partial name="_UpdateBName"></partial></span>
                     </h1>
                 </div>
                 <div class="HRight">
@@ -33,7 +33,7 @@
             <div class="ViewOneContainer">
                 <div class="ContainerLeft">
                     <div>
-                        <h1>Owner: @ViewBag.OneBusiness.StaffList[0].FirstName @ViewBag.OneBusiness.StaffList[0].LastName</h1>
+                        <h1>@ViewBag.OneBusiness.StaffList[0].StaffType: @ViewBag.OneBusiness.StaffList[0].FirstName @ViewBag.OneBusiness.StaffList[0].LastName</h1>
                     </div>
                     <div>
                         <h3>Phone: <a href="tel:@ViewBag.OneBusiness.StaffList[0].PhoneNumber">@ViewBag.OneBusiness.StaffList[0].PhoneNumber</a></h3>
@@ -42,25 +42,28 @@
                         <h3>Email: <a href="mailto:@ViewBag.OneBusiness.StaffList[0].Email">@ViewBag.OneBusiness.StaffList[0].Email</a></h3>
                     </div>
                     <div>
-                        <div style="display: flex; align-items: center;">
+                        <div class="StaffS">
                             <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" >
                                 <span onmouseover="addS(this)" onmouseout="removeS(this)">Staff</span>
                             </button>
                             <button class="btn btn-link" id="addS" onclick="newS()">add</button>
                             <div id="newStaff">
+                                <div class="close">
+                                    <button class="btn-close" aria-label="Close" onclick="close('newStaff')"></button>
+                                </div>
                                 <partial name="_NewStaff"></partial>
                             </div>
                         </div>
                         <br>
                         <div class="collapse" id="collapseExample">
-                            <div class="card card-body"  style="width: 550px; margin-left: 0px;">
-                                <div style="display: flex; align-items: center; justify-content: flex-start; margin-left:0px;">
+                            <div class="card card-body">
+                                <div class="cardInfo">
                                     @foreach (Staff s in ViewBag.oneBusiness.StaffList)
                                     {   
-                                        <div style="border: 1px solid black; border-radius: 3px; padding: 5px; margin-left: 0px; margin-right:5px">
-                                            <p style="margin: 0px;">@s.StaffType</p>
-                                            <p style="margin: 0px;">@s.FirstName @s.LastName</p>
-                                            <p style="margin: 0px;"><a href="tel:@s.PhoneNumber">@s.PhoneNumber</a></p>
+                                        <div class="staffDetails">
+                                            <p>@s.StaffType</p>
+                                            <p>@s.FirstName @s.LastName</p>
+                                            <p><a href="tel:@s.PhoneNumber">@s.PhoneNumber</a></p>
                                             <p><a href="mailto:@s.Email">@s.Email</a></p>
                                         </div>
                                     }
@@ -69,69 +72,86 @@
                         </div>
                     </div>
                     <div>
+                        <h3>Business Website: 
+                            @if(ViewBag.oneBusiness.Website == null)
+                            {
+                                <span>None Yet</span>
+                            }
+                            else
+                            {
+                                <span><a href="https://@ViewBag.oneBusiness.Website" target="_blank">@ViewBag.oneBusiness.Website</a></span>
+                            }
+                        </h3>
+                    </div>
+                    <div>
                         <h2>Founded in: 
                             <span id="SD" onmouseover="editSD(this)" onmouseout="removeSD(this)">
                                 @ViewBag.OneBusiness.StartDate.ToString("MMMM d, yyyy")
                                 <button class="btn btn-link" id="editSD" onclick="switchName('SD','USD')">edit</button>
                             </span>
-                            <span id="USD"><partial name="_UpdateSD"></partial></span>
+                            <span id="USD" onmouseout="SDBack(this)"><partial name="_UpdateSD"></partial></span>
                         </h2>
                     </div>
                     <div>
-                        <h4 style="display: flex; align-items: center; margin:0px;">Industry: 
-                            <span id="I" style="align-items: center;" onmouseover="editI(this)" onmouseout="removeI(this)">
+                        <h2 class="industryT">Industry: 
+                            <span id="I" onmouseover="editI(this)" onmouseout="removeI(this)">
                                 @ViewBag.OneBusiness.Industry
                                 <button class="btn btn-link" id="editI" onclick="switchName('I','UI')">edit</button>
                             </span>
-                            <span id="UI"><partial name="_UpdateI"></partial></span>
-                        </h4>
-                    </div>
-                    <div>
-                        <h4 class="address" onmouseover="addA(this)" onmouseout="removeA(this)">
-                            Location 
-                            <span><button class="btn btn-link" id="addA" onclick="address()">add</button></span>
-                        </h4>
-                    </div>
-                    <div id="newAddress">
-                        <div style="text-align: right;">
-                            <button class="btn btn-link" onclick="close()">close</button>
-                        </div>
-                        <partial name="_Address"></partial>
-                    </div>
-                    <div>
-                        @foreach (Address a in ViewBag.OneBusiness.AddressList)
-                        {
-                            <div class="locationDetails" onmouseover="addAD(this)" onmouseout="removeAD(this)">
-                                <div>
-                                    <p id="ViewOneStreet">@a.Street</p>
-                                    <p>@a.City, @a.State @a.ZipCode</p>
-                                </div>
-                                <span id="aOptions">
-                                    <div style="margin: 0px;">
-                                        <a asp-controller="CRM" asp-action="DeleteLocation" asp-route-businessId="@ViewBag.OneBusiness.BusinessId" asp-route-addressId="@a.AddressId">delete</a>
-                                    </div>
-                                </span>
-                            </div>
-                            
-                        }
-                    </div>
-                    <div>
-                        <h2 class="notes" onmouseover="editN(this)" onmouseout="removeN(this)">
-                            Notes 
-                            <span><button class="btn btn-link" id="editN" onclick="notes()">add</button></span>
+                            <span id="UI" onmouseout="IBack(this)"><partial name="_UpdateI"></partial></span>
                         </h2>
                     </div>
-                    <div style="display: flex;">
-                        <div style="margin-left: 0px;">
-                            @foreach (Note n in ViewBag.OneBusiness.SpecialNotes)
-                            {
-                                <p style="margin: 0px;">@n.SpecialNote</p>
-                                <p>@n.CreatedAt.ToString("M/d @ h:mm tt")</p>
-                            }
+                    <div class="lnbody">
+                        <div style="margin-left: 50px;">
+                            <div>
+                                <h1 class="address" onmouseover="addA(this)" onmouseout="removeA(this)">
+                                    Locations 
+                                    <span><button class="btn btn-link" id="addA" onclick="address()">add</button></span>
+                                </h1>
+                            </div>
+                            <div id="newAddress">
+                            <div class="close">
+                                <button class="btn-close" aria-label="Close" onclick="close('newAddress')"></button>
+                            </div>
+                                <partial name="_Address"></partial>
+                            </div>
+                            <div style="margin-left: 20px;">
+                                @foreach (Address a in ViewBag.OneBusiness.AddressList)
+                                {
+                                    <div class="locationDetails" onmouseover="addAD(this)" onmouseout="removeAD(this)">
+                                        <div>
+                                            <h4 id="ViewOneStreet">@a.Street</h4>
+                                            <h4>@a.City, @a.State @a.ZipCode</h4>
+                                        </div>
+                                        <span id="aOptions">
+                                                <a asp-controller="CRM" asp-action="DeleteLocation" asp-route-businessId="@ViewBag.OneBusiness.BusinessId" asp-route-addressId="@a.AddressId">delete</a>
+                                        </span>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                        <div style="margin-left: 50px;">
+                            <div>
+                                <h1 class="notes" onmouseover="editN(this)" onmouseout="removeN(this)">
+                                    Notes 
+                                    <span><button class="btn btn-link" id="editN" onclick="notes()">add</button></span>
+                                </h1>
+                            </div>
+                            <div style="display: flex;">
+                                <div class="noteDetails">
+                                    @foreach (Note n in ViewBag.OneBusiness.SpecialNotes)
+                                    {
+                                        <div class="note">
+                                            <h5 style="margin: 0px; font-weight: bold;">@n.SpecialNote</h5>
+                                            <p>@n.CreatedAt.ToString("M/d @ h:mm tt")</p>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
                         </div>
                         <span id="SNotes">
-                            <div style="text-align: right;">
-                                <button class="btn btn-link" onclick="close('SNotes')">close</button>
+                            <div class="close">
+                                <button class="btn-close" aria-label="Close" onclick="close('SNotes')"></button>
                             </div>
                             <partial name="_SpecialNotes"></partial>
                         </span>
@@ -171,6 +191,15 @@
                 setTimeout(function(){disappear.style.display = "none"}, 2000);
             }
 
+            function BNBack(){
+                setTimeout(function(){
+                    let disappear = document.getElementById('BNUpdate')
+                    let update = document.getElementById('BN')
+                    disappear.style.display = "none";
+                    update.style.display = "block";
+                }, 4000)
+            }
+
             function editSD(){
                 let appear = document.getElementById('editSD')
                 setTimeout(function(){appear.style.display = "block"}, 1000)
@@ -179,6 +208,15 @@
             function removeSD(){
                 let disappear = document.getElementById('editSD')
                 setTimeout(function(){disappear.style.display = "none"}, 2000);
+            }
+
+            function SDBack(){
+                setTimeout(function(){
+                    let disappear = document.getElementById('USD')
+                    let update = document.getElementById('SD')
+                    disappear.style.display = "none";
+                    update.style.display = "block";
+                }, 4000)
             }
 
             function addS(){
@@ -201,6 +239,15 @@
                 setTimeout(function(){disappear.style.display = "none"}, 2000);
             }
 
+            function IBack(){
+                setTimeout(function(){
+                    let disappear = document.getElementById('UI')
+                    let update = document.getElementById('I')
+                    disappear.style.display = "none";
+                    update.style.display = "block";
+                }, 4000)
+            }
+
             function editN(){
                 let appear = document.getElementById('editN')
                 setTimeout(function(){appear.style.display = "block"}, 1000)
@@ -216,7 +263,7 @@
                 appear.style.display = "block";
             }
 
-            function closeN(ele){
+            function close(ele){
                 let disappear = document.getElementById(ele);
                 disappear.style.display = "none";
             }

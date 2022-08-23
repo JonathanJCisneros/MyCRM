@@ -1,0 +1,12 @@
+.formT {
+    text-align: center;
+}
+
+.error {
+    color: red; 
+    font-weight: bold;
+}
+
+.tc {
+    margin-top: 40px;
+}

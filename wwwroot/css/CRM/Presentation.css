@@ -2,3 +2,66 @@
     margin: 0px auto;
     padding: 0px;
 }
+
+.Section {
+    flex: 1;
+}
+
+.presentHeader {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-evenly;
+}
+
+.fSection {
+    display: flex; 
+    margin-top: 100px; 
+    width: 80%;
+}
+
+.iSection {
+    display: flex; 
+    margin-top: 100px; 
+    width: 80%;
+}
+
+.ganSection {
+    display: flex; 
+    margin-top: 100px; 
+    width: 80%;
+}
+
+.ySection {
+    display: flex; 
+    margin-top: 100px; 
+    width: 80%;
+}
+
+.geoTarget {
+    text-align: center; 
+    margin-top: 100px; 
+    width: 80%;
+}
+
+.geoImage {
+    display: flex; 
+    margin-bottom: 50px; 
+}
+
+.purchaseH {
+    text-align: center;
+}
+
+.products {
+    display: flex; 
+    align-items: center; 
+    width: 80%; 
+    margin-top: 50px; 
+}
+
+.purchaseF {
+    display: flex; 
+    margin-top: 150px; 
+    width: 80%; 
+    margin-bottom: 250px; 
+}

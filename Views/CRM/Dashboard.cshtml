@@ -11,8 +11,8 @@
         <link rel="stylesheet" href="~/css/CRM/Dashboard.css" />
         <link rel="stylesheet" href="~/MeetUpCenter.styles.css" asp-append-version="true" />
     </head>
-    <body style="margin: 0px auto; padding: 0px;">
-        <div style="display: flex; align-items: center; justify-content: space-between;">
+    <body >
+        <div class="header">
             <h1 class="dashboardTitle">Welcome, @Context.Session.GetString("Name")</h1>
             <div>
                 <a asp-controller="CRM" asp-action="NewBusiness" class="btn btn-outline-primary">Add a Business</a>
@@ -20,8 +20,6 @@
             </div>
             
         </div>
-        
-
         <table class="table table-hover">
             <thead>
                 <tr>
@@ -35,11 +33,11 @@
                 @foreach (Business b in Model)
                 {
                     <tr>
-                        <td class="tbody" style="padding: 0px; "><p style="margin-top: 7px; padding-bottom: 0px; font-weight: bold;">@b.BusinessName</p></td>
-                        <td class="tbody" style="padding: 0px;"><p style="margin-top: 7px; font-weight: bold; padding-bottom: 0px;">@b.StaffList[0].FirstName @b.StaffList[0].LastName</p></td>
+                        <td class="tbody"><p class="BName">@b.BusinessName</p></td>
+                        <td class="tbody"><p class="poc">@b.StaffList[0].FirstName @b.StaffList[0].LastName</p></td>
                         @if(@b.UsersWorkedWith.Count > 0)
                         {
-                            <td class="tbody" style="padding: 0px;">
+                            <td class="tbody">
                                 <div class="tActivity">
                                     @if(b.UsersWorkedWith[b.UsersWorkedWith.Count - 1].ActivityType == "Phone Call")
                                     {
@@ -59,7 +57,7 @@
                                             <img src="~/images/Activity/Presentation.svg" alt="ai" id="img">
                                         </div>
                                     }
-                                    <p style="font-weight: bold;">@b.UsersWorkedWith[0].CreatedAt.ToString("MM/d @ h:mm tt")</p>
+                                    <p class="lastA">@b.UsersWorkedWith[0].CreatedAt.ToString("MM/d @ h:mm tt")</p>
                                 </div>
                             </td>
                         }
@@ -68,9 +66,11 @@
                             <td class="tbody">No activity yet</td>
                         }
                         <td class="actions" >
-                            <a asp-controller="CRM" asp-action="ViewOne"  asp-route-businessId=@b.BusinessId class="btn btn-outline-primary">View</a>
-                            <span></span>
-                            <a asp-controller="CRM" asp-action="DeleteOne"  asp-route-businessId="@b.BusinessId" class="btn btn-outline-danger">Delete</a>
+                            <div>
+                                <a asp-controller="CRM" asp-action="ViewOne"  asp-route-businessId=@b.BusinessId class="btn btn-outline-primary">View</a>
+                                <span></span>
+                                <a asp-controller="CRM" asp-action="DeleteOne"  asp-route-businessId="@b.BusinessId" class="btn btn-outline-danger">Delete</a>
+                            </div>
                         </td>
                     </tr>
                 }

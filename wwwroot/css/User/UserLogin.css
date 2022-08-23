@@ -23,3 +23,13 @@
     border-radius: 1%;
     margin-top: 100px;
 }
+
+.error {
+    color: red; 
+    font-weight: bold;
+}
+
+.RegisterL {
+    text-align: center; 
+    margin-top: 25px;
+}
