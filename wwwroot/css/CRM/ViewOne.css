@@ -5,6 +5,8 @@
 
 .ViewOneBody {
     min-height: 100vh;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 .ViewOneHeader {
@@ -105,6 +107,7 @@
 
 .ContainerRight {
     width: 20%;
+    border-left: 1px solid black;
 }
 
 #SD {

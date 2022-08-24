@@ -37,7 +37,6 @@ public class CRMController : Controller
         {
             return RedirectToAction("Home", "User");
         }
-
         List<Business> UsersLeads = db.Businesses
             .Include(s => s.StaffList)
             .Include(u => u.UsersWorkedWith.OrderBy(e => e.CreatedAt))

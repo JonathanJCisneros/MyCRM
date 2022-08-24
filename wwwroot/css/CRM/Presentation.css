@@ -37,6 +37,12 @@
     width: 80%;
 }
 
+.Video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .geoTarget {
     text-align: center; 
     margin-top: 100px; 
@@ -48,6 +54,11 @@
     margin-bottom: 50px; 
 }
 
+.geoImage {
+    max-width: 70%;
+    max-height: 70%;
+}
+
 .purchaseH {
     text-align: center;
 }
@@ -57,6 +68,10 @@
     align-items: center; 
     width: 80%; 
     margin-top: 50px; 
+}
+
+.Product {
+    padding: 15px;
 }
 
 .purchaseF {

@@ -10,11 +10,11 @@
         <link rel="stylesheet" href="~/css/CRM/_ClientActivity.css"/>
     </head>
     <body>
-        <div>
+        <div class="whatever">            
             <div class="activityContainer">
             @foreach (Activity a in ViewBag.OneBusiness.UsersWorkedWith)
             {
-                <div class="activity" >
+                <div class="activity"  >
                     <div class="activityHeader">
                         <div>
                         @if(a.ActivityType == "Phone Call")
@@ -46,7 +46,7 @@
                 </div>
             }
             </div>
-            <div style="position: absolute; bottom: 10px; right: 10px">
+            <div class="footer">
                 <form asp-controller="CRM" asp-action="AddActivity" asp-route-businessId="@ViewBag.OneBusiness.BusinessId" method="POST">
                     <h4>Log Activity</h4>
                     <div>
