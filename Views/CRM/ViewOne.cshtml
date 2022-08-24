@@ -46,12 +46,21 @@
                             <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" >
                                 <span onmouseover="addS(this)" onmouseout="removeS(this)">Staff</span>
                             </button>
-                            <button class="btn btn-link" id="addS" onclick="newS()">add</button>
-                            <div id="newStaff">
-                                <div class="close">
-                                    <button class="btn-close" aria-label="Close" onclick="close()"></button>
+                            <button class="btn btn-link" data-bs-toggle="modal" id="addS" data-bs-target="#exampleModal">
+                                add
+                            </button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h3>Add a New Staff Member</h3>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="margin-left: 40px;"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <partial name="_NewStaff"></partial>
+                                        </div>
+                                    </div>
                                 </div>
-                                <partial name="_NewStaff"></partial>
                             </div>
                         </div>
                         <div class="collapse" id="collapseExample">
@@ -112,14 +121,25 @@
                             <div>
                                 <h1 class="address" onmouseover="addA(this)" onmouseout="removeA(this)">
                                     Locations 
-                                    <span><button class="btn btn-link" id="addA" onclick="address()">add</button></span>
+                                    <span>
+                                        <button class="btn btn-link" data-bs-toggle="modal" id="addA" data-bs-target="#exampleModal1">
+                                            add
+                                        </button>
+                                    </span>
                                 </h1>
                             </div>
-                            <div id="newAddress">
-                                <div class="close">
-                                    <button class="btn-close" aria-label="Close" onclick="close('newAddress')"></button>
+                            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h3>Add a New Location</h3>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="margin-left: 40px;"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <partial name="_Address"></partial>
+                                        </div>
+                                    </div>
                                 </div>
-                                    <partial name="_Address"></partial>
                             </div>
                             <div style="margin-left: 20px;">
                                 @foreach (Address a in ViewBag.OneBusiness.AddressList)
@@ -140,7 +160,11 @@
                             <div>
                                 <h1 class="notes" onmouseover="editN(this)" onmouseout="removeN(this)">
                                     Notes 
-                                    <span><button class="btn btn-link" id="editN" onclick="notes()">add</button></span>
+                                    <span>
+                                        <button class="btn btn-link" data-bs-toggle="modal" id="editN" data-bs-target="#exampleModal2">
+                                            add
+                                        </button>
+                                    </span>
                                 </h1>
                             </div>
                             <div style="display: flex;">
@@ -155,12 +179,19 @@
                                 </div>
                             </div>
                         </div>
-                        <span id="SNotes">
-                            <div class="close">
-                                <button class="btn-close" aria-label="Close" onclick="close('SNotes')"></button>
+                        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3>Add a Note</h3>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="margin-left: 40px;"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <partial name="_SpecialNotes"></partial>
+                                    </div>
+                                </div>
                             </div>
-                            <partial name="_SpecialNotes"></partial>
-                        </span>
+                        </div>
                     </div>
                     <div class="purchases">
                         <p>

@@ -11,9 +11,6 @@
     </head>
     <body>
         <form asp-controller="CRM" asp-action="AddAddress" asp-route-businessId="@ViewBag.OneBusiness.BusinessId" method="POST">
-            <div style="display: flex; align-items: center; justify-content: space-evenly;">
-                <h2>Add a New Location</h2>
-            </div>
             <div>
                 <label asp-for="Street" class="form-label"></label>
                 <span asp-validation-for="Street" style="color: red; font-weight: bold;"></span>

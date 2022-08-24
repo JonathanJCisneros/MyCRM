@@ -14,7 +14,7 @@
             <div style="display: flex;">
                 <span asp-validation-for="Industry" style="color: red; font-weight: bold;"></span>
                 <select asp-for="Industry" class="form-control" id="Iinput">
-                    <option value="none" selected disabled hidden>Select</option>
+                    <option value="@ViewBag.OneBusiness.Industry" selected>@ViewBag.OneBusiness.Industry</option>
                     <option value="Automotive">Automotive</option>
                     <option value="Health Care">Health Care</option>
                     <option value="Legal">Legal</option>

@@ -13,7 +13,7 @@
         <form asp-controller="CRM" asp-action="UpdateBusinessStartDate" asp-route-businessId="@ViewBag.OneBusiness.BusinessId" method="POST">
             <div style="display: flex;">
                 <span asp-validation-for="StartDate" style="color: red; font-weight: bold;"></span>
-                <input type="date" asp-for="StartDate" class="form-control" value="@ViewBag.OneBusiness.StartDate.ToString("YYYY-MM-DD")" id="SDinput">
+                <input type="date" asp-for="StartDate" class="form-control" value="@ViewBag.OneBusiness.StartDate" id="SDinput">
                 <button type="submit" class="btn btn-link">Update</button>
             </div>
         </form>
