@@ -86,6 +86,9 @@ public class CRMController : Controller
         db.Staff.Add(contact);
         db.SaveChanges();
 
+        business.PocId = contact.StaffId;
+        db.Businesses.Update(business);
+
         Address address = new Address()
         {
             Street = newBusiness.Street,
@@ -172,12 +175,12 @@ public class CRMController : Controller
     [HttpGet("/client/{businessId}/present")]
     public IActionResult Presentation(int businessId)
     {
-        Business? oneBusiness = db.Businesses
+        Business? OneBusiness = db.Businesses
             .Include(a => a.AddressList)
             .Include(a => a.PurchaseList)
                 .ThenInclude(a => a.Product)
             .FirstOrDefault(b => b.BusinessId == businessId);
-        ViewBag.oneBusiness = oneBusiness;
+        ViewBag.oneBusiness = OneBusiness;
 
         List<Product> allProducts = db.Products.ToList();
         ViewBag.Products = allProducts;
@@ -291,6 +294,17 @@ public class CRMController : Controller
         Business? business = db.Businesses.FirstOrDefault(b => b.BusinessId == businessId);
 
         business.Website = editWebsite.Website;
+
+        db.Businesses.Update(business);
+        db.SaveChanges();
+        return RedirectToAction("ViewOne", new {businessId = businessId});
+    }
+
+    [HttpPost("/client/{businessId}/staff/POC")]
+    public IActionResult UpdatePOC(int businessId, Business updatePOC)
+    {
+        Business? business = db.Businesses.FirstOrDefault(b => b.BusinessId == businessId);
+        business.PocId = updatePOC.PocId;
 
         db.Businesses.Update(business);
         db.SaveChanges();

@@ -16406,6 +16406,11 @@
       "FilePath": "c:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\Views\\Admin\\AdminRegister.cshtml",
       "TargetPath": "Views\\Admin\\AdminRegister.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\Views\\CRM\\_POC.cshtml",
+      "TargetPath": "Views\\CRM\\_POC.cshtml",
+      "FileKind": "mvc"
     }
   ],
   "SerializationFormat": "0.2"

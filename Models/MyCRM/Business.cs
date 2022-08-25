@@ -24,6 +24,8 @@ public class Business
     [Required(ErrorMessage = "is required")]
     public string Industry {get; set;}
 
+    public int? PocId {get; set;}
+
     public DateTime CreatedAt {get; set;} = DateTime.Now;
     public DateTime UpdatedAt {get; set;} = DateTime.Now;
 
