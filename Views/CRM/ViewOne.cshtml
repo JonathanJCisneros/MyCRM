@@ -15,18 +15,17 @@
             <div class="ViewOneHeader">
                 <div>
                     <h1 class="bname">
-                        <span onmouseover="editName(this)" onmouseout="removeName(this)" id="BN">
+                        <span ondblclick="edit('BNUpdate','BN')" onmouseout="removeName(this)" id="BN">
                             @ViewBag.OneBusiness.BusinessName
-                            <button class="btn btn-link" id="editor" onclick="switchName('BN','BNUpdate')">edit</button>
                         </span>
                         <span id="BNUpdate" onmouseout="BNBack(this)"><partial name="_UpdateBName"></partial></span>
                     </h1>
                 </div>
                 <div class="HRight">
                     <a asp-controller="CRM" asp-action="Presentation"  asp-route-businessId="@ViewBag.oneBusiness.BusinessId" class="btn btn-outline-success">Presentation</a>
-                    <span></span>
+                    <span style="width: 5px;"></span>
                     <a asp-controller="CRM" asp-action="Dashboard" class="btn btn-outline-primary">Dashboard</a>
-                    <span></span>
+                    <span style="width: 5px;"></span>
                     <a asp-controller="User" asp-action="Logout" class="btn btn-outline-danger">Log Out</a>
                 </div>
             </div>
@@ -80,40 +79,42 @@
                         </div>
                     </div>
                     <div>
-                        <h3 class="BW" >Business Website: 
+                        <h3 class="BW" ondblclick="edit('WUpdate', 'W')" onmouseout="WBack(this)">Business Website: 
                             @if(ViewBag.oneBusiness.Website == null)
                             {
-                                <span id="W" onmouseover="editW(this)" onmouseout="removeW(this)">
+                                <span id="W">
                                     None Yet
-                                    <button id="editW" class="btn btn-link" onclick="switchName('W', 'WUpdate')">edit</button>
                                 </span>
                             }
                             else
                             {
-                                <span id="W" onmouseover="editW(this)" onmouseout="removeW(this)">
+                                <span id="W">
                                     <a href="https://@ViewBag.oneBusiness.Website" target="_blank">@ViewBag.oneBusiness.Website</a>
-                                    <button id="editW" class="btn btn-link" onclick="switchName('W', 'WUpdate')">edit</button>
                                 </span>
                             }
-                            <span id="WUpdate" onmouseout="WBack(this)"><partial name="_Website"></partial></span>
+                            <span id="WUpdate">
+                                <partial name="_Website"></partial>
+                            </span>
                         </h3>
                     </div>
                     <div>
                         <h2>Founded in: 
-                            <span id="SD" onmouseover="editSD(this)" onmouseout="removeSD(this)">
+                            <span id="SD" ondblclick="edit('USD', 'SD')">
                                 @ViewBag.OneBusiness.StartDate.ToString("MMMM d, yyyy")
-                                <button class="btn btn-link" id="editSD" onclick="switchName('SD','USD')">edit</button>
                             </span>
-                            <span id="USD" onmouseout="SDBack(this)"><partial name="_UpdateSD"></partial></span>
+                            <span id="USD" onmouseout="SDBack(this)">
+                                <partial name="_UpdateSD"></partial>
+                            </span>
                         </h2>
                     </div>
                     <div>
                         <h2 class="industryT">Industry: 
-                            <span id="I" onmouseover="editI(this)" onmouseout="removeI(this)">
+                            <span id="I" ondblclick="edit('UI', 'I')">
                                 @ViewBag.OneBusiness.Industry
-                                <button class="btn btn-link" id="editI" onclick="switchName('I','UI')">edit</button>
                             </span>
-                            <span id="UI" onmouseout="IBack(this)"><partial name="_UpdateI"></partial></span>
+                            <span id="UI" onmouseout="IBack(this)">
+                                <partial name="_UpdateI"></partial>
+                            </span>
                         </h2>
                     </div>
                     <div class="lnbody">
@@ -144,12 +145,12 @@
                             <div style="margin-left: 20px;">
                                 @foreach (Address a in ViewBag.OneBusiness.AddressList)
                                 {
-                                    <div class="locationDetails" onmouseover="addAD(this)" onmouseout="removeAD(this)">
+                                    <div class="locationDetails" ondblclick="deleteOne('aOptions@a.AddressId')" onmouseout="removeAD(this)">
                                         <div>
                                             <h4 id="ViewOneStreet">@a.Street</h4>
                                             <h4>@a.City, @a.State @a.ZipCode</h4>
                                         </div>
-                                        <span id="aOptions">
+                                        <span class="aOptions" id="aOptions@a.AddressId">
                                                 <a asp-controller="CRM" asp-action="DeleteLocation" asp-route-businessId="@ViewBag.OneBusiness.BusinessId" asp-route-addressId="@a.AddressId">delete</a>
                                         </span>
                                     </div>
@@ -204,7 +205,16 @@
                                 <div class="card card-body" style="width: 300px;">
                                     @foreach (Purchase p in ViewBag.OneBusiness.PurchaseList)
                                     {
-                                        <p>@p.Product.Name at @p.Address.City, @p.Address.State Location </p>
+                                        <div class="purchaseDetails">
+                                            <div class="img" style="margin-left: 5px; margin-right: 15px;">
+                                                <img src="~/images/Activity/Purchase.png" alt="ai" id="img">
+                                            </div>
+                                            <div style="margin-left: 0px; padding-left: 0px;">
+                                                <p style="margin: 0px;">@p.Product.Name at</p>
+                                                <p style="margin: 0px;">@p.Address.City, @p.Address.State</p>
+                                            </div>
+                                        </div>
+                                        
                                     }
                                 </div>
                             </div>
@@ -218,5 +228,143 @@
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
         <script src="~/js/ViewOne.js"></script>
+        <script>
+            function edit(appear, disappear){
+                document.getElementById(appear).style.display = "block";
+                document.getElementById(disappear).style.display = "none";
+            } 
+
+            function deleteOne(ele){
+                document.getElementById(ele).style.display = "block";
+            }
+
+            function removeName(){
+                let disappear = document.getElementById('editor')
+                setTimeout(function(){disappear.style.display = "none"}, 3000);
+            }
+
+            function BNBack(){
+                setTimeout(function(){
+                    let disappear = document.getElementById('BNUpdate')
+                    let update = document.getElementById('BN')
+                    disappear.style.display = "none";
+                    update.style.display = "block";
+                }, 6000)
+            }
+
+            function removeSD(){
+                let disappear = document.getElementById('editSD')
+                setTimeout(function(){disappear.style.display = "none"}, 3000);
+            }
+
+            function SDBack(){
+                setTimeout(function(){
+                    let disappear = document.getElementById('USD')
+                    let update = document.getElementById('SD')
+                    disappear.style.display = "none";
+                    update.style.display = "block";
+                }, 6000)
+            }
+
+            function addS(){
+                let appear = document.getElementById('addS')
+                setTimeout(function(){appear.style.display = "block"}, 2000)
+            }
+
+            function removeS(){
+                let disappear = document.getElementById('addS')
+                setTimeout(function(){disappear.style.display = "none"}, 3000);
+            }
+
+            function removeW(){
+                let disappear = document.getElementById('editW')
+                setTimeout(function(){disappear.style.display = "none"}, 3000);
+            }
+
+            function WBack(){
+                setTimeout(function(){
+                    let disappear = document.getElementById('WUpdate')
+                    let update = document.getElementById('W')
+                    disappear.style.display = "none";
+                    update.style.display = "block";
+                }, 6000)
+            }
+
+            function editI(){
+                let appear = document.getElementById('editI')
+                setTimeout(function(){appear.style.display = "block"}, 2000)
+            }
+
+            function removeI(){
+                let disappear = document.getElementById('editI')
+                setTimeout(function(){disappear.style.display = "none"}, 3000);
+            }
+
+            function IBack(){
+                setTimeout(function(){
+                    let disappear = document.getElementById('UI')
+                    let update = document.getElementById('I')
+                    disappear.style.display = "none";
+                    update.style.display = "block";
+                }, 6000)
+            }
+
+            function editN(){
+                let appear = document.getElementById('editN')
+                setTimeout(function(){appear.style.display = "block"}, 2000)
+            }
+
+            function removeN(){
+                let disappear = document.getElementById('editN')
+                setTimeout(function(){disappear.style.display = "none"}, 3000);
+            }
+
+            function notes(){
+                let appear = document.getElementById("SNotes")
+                appear.style.display = "block";
+            }
+
+            function close(){
+                let disappear = document.getElementById('newStaff');
+                disappear.style.display = "none";
+            }
+
+            function addA(){
+                let appear = document.getElementById('addA')
+                setTimeout(function(){appear.style.display = "block"}, 2000)
+            }
+
+            function removeA(){
+                let disappear = document.getElementById('addA')
+                setTimeout(function(){disappear.style.display = "none"}, 3000);
+            }
+
+            function address(){
+                let appear = document.getElementById('newAddress')
+                appear.style.display = "block"
+            }
+
+            function addAD(){
+                let appear = document.getElementById('aOptions')
+                setTimeout(function(){appear.style.display = "block"}, 2000)
+            }
+
+            function removeAD(){
+                let disappear = document.getElementById('aOptions')
+                setTimeout(function(){disappear.style.display = "none"}, 3000);
+            }
+
+            function newS(){
+                let appear = document.getElementById('newStaff')
+                appear.style.display = "block"
+            }
+
+            function switchName(dis,up){
+                let disappear = document.getElementById(dis)
+                let update = document.getElementById(up)
+                disappear.style.display = "none";
+                update.style.display = "block";
+            }
+        </script>
     </body>
 </html>

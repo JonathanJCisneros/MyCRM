@@ -1,12 +1,19 @@
 * {
     margin: 0px auto;
-    padding: 10px;
+    padding: 0px;
 }
+
+.dContainer {
+    width: 80%;
+    box-shadow: 0px 0px 7px black;
+    min-height: 100vh;
+} 
 
 .header {
     display: flex; 
     align-items: center; 
     justify-content: space-between; 
+    padding-top: 20px;
 }
 
 .dashboardTitle{
@@ -28,23 +35,23 @@
 }
 
 .BName {
-    margin-top: 7px; 
+    font-size: 20px;
     padding-bottom: 0px; 
     font-weight: bold; 
+    margin: 0px;
 }
 
 .poc {
-    margin-top: 7px; 
-    font-weight: bold; 
+    font-size: 20px;
     padding-bottom: 0px; 
+    font-weight: bold; 
+    margin: 0px;
 }
 
 .tActivity {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 0px;
-    margin-bottom: 0px;
 }
 
 .tActivity p{
@@ -53,10 +60,9 @@
 }
 
 .img {
-    height: 40px;
-    width: 40px;
+    height: 35px;
+    width: 35px;
     border-radius: 50%;
-    box-shadow: 0px 0px 2px black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -65,8 +71,8 @@
 }
 
 #img {
-    height: 60px;
-    width: 60px;
+    height: 100%;
+    width: 100%;
 }
 
 .actions {

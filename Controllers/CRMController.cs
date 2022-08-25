@@ -112,7 +112,7 @@ public class CRMController : Controller
             .Include(a => a.PurchaseList)
                 .ThenInclude(a => a.Product)
             .Include(n => n.SpecialNotes)
-            .Include(g => g.UsersWorkedWith.OrderBy(a => a.CreatedAt))
+            .Include(g => g.UsersWorkedWith.OrderByDescending(a => a.CreatedAt))
                 .ThenInclude(g => g.User)
             .FirstOrDefault(e => e.BusinessId == businessId);
         if(OneBusiness == null)
