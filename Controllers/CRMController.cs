@@ -41,6 +41,7 @@ public class CRMController : Controller
             .Include(s => s.StaffList)
             .Include(u => u.UsersWorkedWith.OrderBy(e => e.CreatedAt))
             .ThenInclude(u => u.User)
+            .OrderByDescending(b => b.UpdatedAt)
             .ToList();
         return View("Dashboard", UsersLeads);
     }

@@ -163,9 +163,14 @@
                                 @foreach (Address a in ViewBag.OneBusiness.AddressList)
                                 {
                                     <div class="locationDetails" ondblclick="deleteOne('aOptions@a.AddressId')" onmouseout="removeAD(this)">
-                                        <div>
-                                            <h4 id="ViewOneStreet">@a.Street</h4>
-                                            <h4>@a.City, @a.State @a.ZipCode</h4>
+                                        <div style="display: flex; align-items: center;">
+                                            <div class="img" style="margin-left: 5px; margin-right: 15px;">
+                                                    <img src="~/images/Activity/Location.png" alt="ai" id="img">
+                                            </div>
+                                            <div>
+                                                <h4 id="ViewOneStreet">@a.Street</h4>
+                                                <h4>@a.City, @a.State @a.ZipCode</h4>
+                                            </div>
                                         </div>
                                         <span class="aOptions" id="aOptions@a.AddressId">
                                                 <a asp-controller="CRM" asp-action="DeleteLocation" asp-route-businessId="@ViewBag.OneBusiness.BusinessId" asp-route-addressId="@a.AddressId">delete</a>
@@ -190,8 +195,13 @@
                                     @foreach (Note n in ViewBag.OneBusiness.SpecialNotes)
                                     {
                                         <div class="note">
-                                            <h5 style="margin: 0px; font-weight: bold;">@n.SpecialNote</h5>
-                                            <p>@n.CreatedAt.ToString("M/d @ h:mm tt")</p>
+                                            <div class="img" style="margin-left: 5px; margin-right: 15px;">
+                                                    <img src="~/images/Activity/Note.png" alt="ai" id="img">
+                                            </div>
+                                            <div style="margin-left: 7px;">
+                                                <h5 style="margin: 0px; font-weight: bold;">@n.SpecialNote</h5>
+                                                <p>@n.CreatedAt.ToString("M/d @ h:mm tt")</p>
+                                            </div>
                                         </div>
                                     }
                                 </div>
