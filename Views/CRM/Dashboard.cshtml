@@ -66,7 +66,7 @@
                                                 <img src="~/images/Activity/Presentation.png" alt="ai" id="img">
                                             </div>
                                         }
-                                        <p class="lastA">@b.UsersWorkedWith[0].CreatedAt.ToString("MM/d @ h:mm tt")</p>
+                                        <p class="lastA">@b.UsersWorkedWith[b.UsersWorkedWith.Count - 1].CreatedAt.ToString("MM/d @ h:mm tt")</p>
                                     </div>
                                 </td>
                             }
