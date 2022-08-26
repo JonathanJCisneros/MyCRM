@@ -35,7 +35,15 @@
                     {
                         <tr>
                             <td class="tbody"><span class="tdata"><p class="BName">@b.BusinessName</p></span></td>
-                            <td class="tbody"><p class="poc">@b.StaffList[0].FirstName @b.StaffList[0].LastName</p></td>
+                            <td class="tbody">
+                                @foreach (Staff s in b.StaffList)
+                                {
+                                    if(s.StaffId == b.PocId)
+                                    {
+                                        <p class="poc">@s.FirstName @s.LastName</p>
+                                    }
+                                }
+                            </td>
                             @if(@b.UsersWorkedWith.Count > 0)
                             {
                                 <td class="tbody">
