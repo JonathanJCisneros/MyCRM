@@ -35,4 +35,6 @@ public class Staff
     public int BusinessId {get; set;}
     public DateTime CreatedAt {get; set;} = DateTime.Now;
     public DateTime UpdatedAt {get; set;} = DateTime.Now;
+
+    public List<UpcomingTask> TaskList {get; set;} = new List<UpcomingTask>();
 }

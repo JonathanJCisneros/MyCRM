@@ -11,8 +11,8 @@ using MyCRM.Models;
 namespace MyCRM.Migrations
 {
     [DbContext(typeof(MyCRMContext))]
-    [Migration("20220825175034_NeverEnding")]
-    partial class NeverEnding
+    [Migration("20220825233234_FirstMigration")]
+    partial class FirstMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -146,6 +146,9 @@ namespace MyCRM.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
+                    b.Property<int?>("PocId")
+                        .HasColumnType("int");
+
                     b.Property<DateTime?>("StartDate")
                         .HasColumnType("datetime(6)");
 
@@ -275,9 +278,6 @@ namespace MyCRM.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<bool>("POC")
-                        .HasColumnType("tinyint(1)");
-
                     b.Property<long>("PhoneNumber")
                         .HasColumnType("bigint");
 
@@ -293,6 +293,52 @@ namespace MyCRM.Migrations
                     b.HasIndex("BusinessId");
 
                     b.ToTable("Staff");
+                });
+
+            modelBuilder.Entity("MyCRM.Models.UpcomingTask", b =>
+                {
+                    b.Property<int>("TaskId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<int>("BusinessId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("Details")
+                        .HasColumnType("longtext");
+
+                    b.Property<DateTime?>("DueDate")
+                        .IsRequired()
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<int>("StaffId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("Status")
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<string>("TaskType")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("TaskId");
+
+                    b.HasIndex("BusinessId");
+
+                    b.HasIndex("StaffId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Tasks");
                 });
 
             modelBuilder.Entity("MyCRM.Models.User", b =>
@@ -421,6 +467,27 @@ namespace MyCRM.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("MyCRM.Models.UpcomingTask", b =>
+                {
+                    b.HasOne("MyCRM.Models.Business", null)
+                        .WithMany("TaskList")
+                        .HasForeignKey("BusinessId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("MyCRM.Models.Staff", null)
+                        .WithMany("TaskList")
+                        .HasForeignKey("StaffId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("MyCRM.Models.User", null)
+                        .WithMany("TaskList")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("MyCRM.Models.Business", b =>
                 {
                     b.Navigation("AddressList");
@@ -431,6 +498,8 @@ namespace MyCRM.Migrations
 
                     b.Navigation("StaffList");
 
+                    b.Navigation("TaskList");
+
                     b.Navigation("UsersWorkedWith");
                 });
 
@@ -439,9 +508,16 @@ namespace MyCRM.Migrations
                     b.Navigation("ClientList");
                 });
 
+            modelBuilder.Entity("MyCRM.Models.Staff", b =>
+                {
+                    b.Navigation("TaskList");
+                });
+
             modelBuilder.Entity("MyCRM.Models.User", b =>
                 {
                     b.Navigation("CurrentLeads");
+
+                    b.Navigation("TaskList");
                 });
 #pragma warning restore 612, 618
         }

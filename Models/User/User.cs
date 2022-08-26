@@ -40,4 +40,5 @@ public class User
     public DateTime UpdatedAt {get; set;} = DateTime.Now;
 
     public List<Activity> CurrentLeads {get; set;} = new List<Activity>(); 
+    public List<UpcomingTask> TaskList {get; set;} = new List<UpcomingTask>();
 }

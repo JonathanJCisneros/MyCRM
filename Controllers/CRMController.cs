@@ -114,6 +114,10 @@ public class CRMController : Controller
             .Include(a => a.AddressList)
             .Include(a => a.PurchaseList)
                 .ThenInclude(a => a.Product)
+            .Include(a => a.TaskList)
+                .ThenInclude(t => t.user)
+            .Include(a => a.TaskList)
+                .ThenInclude(a => a.staff)
             .Include(n => n.SpecialNotes)
             .Include(g => g.UsersWorkedWith.OrderByDescending(a => a.CreatedAt))
                 .ThenInclude(g => g.User)
@@ -307,6 +311,22 @@ public class CRMController : Controller
         business.PocId = updatePOC.PocId;
 
         db.Businesses.Update(business);
+        db.SaveChanges();
+        return RedirectToAction("ViewOne", new {businessId = businessId});
+    }
+
+    [HttpPost]
+    public IActionResult AddTask(int businessId, UpcomingTask newTask)
+    {
+        newTask.BusinessId = businessId;
+        newTask.UserId = (int)uid;
+
+        if(ModelState.IsValid == false)
+        {
+            return RedirectToAction("ViewOne", new {businessId = businessId});
+        }
+
+        db.Tasks.Add(newTask);
         db.SaveChanges();
         return RedirectToAction("ViewOne", new {businessId = businessId});
     }

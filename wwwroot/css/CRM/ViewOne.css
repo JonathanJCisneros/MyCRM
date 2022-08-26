@@ -285,3 +285,33 @@
     display: none;
     margin-left: 7px;
 }
+
+.task {
+    position: fixed;
+    width: 300px;
+    box-shadow: 0px 0px 3px black;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    top: 240px;
+    left: 42%;
+}
+
+.taskDetails {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    box-shadow: 0px 0px 3px black;
+    border-radius: 3px;
+    padding: 10px;
+    width: 100%;
+    margin: 5px;
+}
+
+.taskBody {
+    max-height: 200px; 
+    overflow-y: scroll;
+}
+
+.taskBody::-webkit-scrollbar { 
+    display: none;
+}

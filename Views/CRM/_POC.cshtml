@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="~/css/CRM/_POC.css">
     </head>
     <body>
-        <form asp-controller="CRM" asp-action="UpdatePOC" method="POST" style="width: 250px; display: flex; margin-left: 0px;">
+        <form asp-controller="CRM" asp-action="UpdatePOC" asp-route-businessId="@ViewBag.oneBusiness.BusinessId" method="POST" style="width: 250px; display: flex; margin-left: 0px;">
             <div>
                 <span asp-validation-for="PocId" class="error"></span>
                 <select asp-for="PocId" class="form-control" style="margin-left: 7px;">

@@ -24,4 +24,6 @@ public class MyCRMContext : DbContext
     public DbSet<Purchase> Purchases { get; set;}
 
     public DbSet<Product> Products { get; set;}
+
+    public DbSet<UpcomingTask> Tasks {get; set;}
 }

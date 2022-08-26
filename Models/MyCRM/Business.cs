@@ -35,6 +35,7 @@ public class Business
     public List<Address> AddressList {get; set;} = new List<Address>();
     public List<Note> SpecialNotes {get; set;} = new List<Note>(); 
     public List<Purchase> PurchaseList {get; set;} = new List<Purchase>();
+    public List<UpcomingTask> TaskList {get; set;} = new List<UpcomingTask>();
 }
 
 [NotMapped]
