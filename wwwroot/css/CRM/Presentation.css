@@ -3,43 +3,54 @@
     padding: 0px;
 }
 
-.container {
+.contain {
+    background-color: rgb(251, 249, 255);
+    min-height: 100vh;
     width: 80%;
-    box-shadow: 0px 0px 7px black;
 }
 
 .Section {
     flex: 1;
 }
 
-.presentHeader {
+.header {
     display: flex; 
     align-items: center; 
-    justify-content: space-evenly;
-    padding-top: 40px;
+    justify-content: space-between; 
+    background-color: rgb(125, 132, 178);
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.header h1 {
+    color: white;
 }
 
 .fSection {
     display: flex; 
-    margin-top: 100px; 
+    padding-top: 100px; 
+    padding-bottom: 100px;
     width: 80%;
 }
 
 .iSection {
     display: flex; 
-    margin-top: 100px; 
+    padding-top: 100px; 
+    padding-bottom: 100px; 
     width: 80%;
 }
 
 .ganSection {
     display: flex; 
-    margin-top: 100px; 
+    padding-top: 100px; 
+    padding-bottom: 100px;  
     width: 80%;
 }
 
 .ySection {
     display: flex; 
-    margin-top: 100px; 
+    padding-top: 100px; 
+    padding-bottom: 100px;  
     width: 80%;
 }
 
