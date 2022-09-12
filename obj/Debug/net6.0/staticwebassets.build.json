@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5lNoriwyJVDtILk3dHr3wMfNyzgKN489kszQNEZIpCs=",
+  "Hash": "P0bg+Whm2mkMHLrHS3adFaRHe1bzboXLuRDlmIQLy3c=",
   "Source": "MyCRM",
   "BasePath": "_content/MyCRM",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "MyCRM\\wwwroot",
       "Source": "MyCRM",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\css\\Admin\\_ProductForm.css",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\css\\Admin\\_ProductForm.css",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "css/Admin/_ProductForm.css",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Admin\\_ProductForm.css"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\css\\Admin\\AdminDashboard.css",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\css\\Admin\\AdminDashboard.css",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "css/Admin/AdminDashboard.css",
       "AssetKind": "All",
@@ -51,10 +51,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Admin\\AdminDashboard.css"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\css\\Admin\\AdminLogin.css",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\css\\Admin\\AdminLogin.css",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "css/Admin/AdminLogin.css",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Admin\\AdminLogin.css"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\css\\Admin\\AdminRegister.css",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\css\\Admin\\AdminRegister.css",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "css/Admin/AdminRegister.css",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Admin\\AdminRegister.css"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\css\\CRM\\_Address.css",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\css\\CRM\\_Address.css",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "css/CRM/_Address.css",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\css\\CRM\\_Address.css"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\css\\CRM\\_ClientActivity.css",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\css\\CRM\\_ClientActivity.css",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "css/CRM/_ClientActivity.css",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\css\\CRM\\_ClientActivity.css"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\css\\CRM\\_Facebook.css",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\css\\CRM\\_Facebook.css",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "css/CRM/_Facebook.css",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\css\\CRM\\_Facebook.css"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\css\\CRM\\_Instagram.css",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\css\\CRM\\_Instagram.css",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "css/CRM/_Instagram.css",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\css\\CRM\\_Instagram.css"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\css\\CRM\\_POC.css",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\css\\CRM\\_POC.css",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "css/CRM/_POC.css",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\css\\CRM\\_POC.css"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\css\\CRM\\_Purchase.css",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\css\\CRM\\_Purchase.css",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "css/CRM/_Purchase.css",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\css\\CRM\\_Purchase.css"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\css\\CRM\\_SpecialNotes.css",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\css\\CRM\\_SpecialNotes.css",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "css/CRM/_SpecialNotes.css",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\css\\CRM\\_SpecialNotes.css"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\css\\CRM\\_Task.css",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\css\\CRM\\_Task.css",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "css/CRM/_Task.css",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\css\\CRM\\_Task.css"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\css\\CRM\\_UpdateBName.css",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\css\\CRM\\_UpdateBName.css",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "css/CRM/_UpdateBName.css",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\css\\CRM\\_UpdateBName.css"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\css\\CRM\\_UpdateI.css",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\css\\CRM\\_UpdateI.css",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "css/CRM/_UpdateI.css",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\css\\CRM\\_UpdateI.css"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\css\\CRM\\_UpdateSD.css",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\css\\CRM\\_UpdateSD.css",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "css/CRM/_UpdateSD.css",
       "AssetKind": "All",
@@ -272,10 +272,10 @@
       "OriginalItemSpec": "wwwroot\\css\\CRM\\_UpdateSD.css"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\css\\CRM\\_Website.css",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\css\\CRM\\_Website.css",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "css/CRM/_Website.css",
       "AssetKind": "All",
@@ -289,10 +289,10 @@
       "OriginalItemSpec": "wwwroot\\css\\CRM\\_Website.css"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\css\\CRM\\Dashboard.css",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\css\\CRM\\Dashboard.css",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "css/CRM/Dashboard.css",
       "AssetKind": "All",
@@ -306,10 +306,10 @@
       "OriginalItemSpec": "wwwroot\\css\\CRM\\Dashboard.css"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\css\\CRM\\NewBusiness.css",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\css\\CRM\\NewBusiness.css",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "css/CRM/NewBusiness.css",
       "AssetKind": "All",
@@ -323,10 +323,10 @@
       "OriginalItemSpec": "wwwroot\\css\\CRM\\NewBusiness.css"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\css\\CRM\\Presentation.css",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\css\\CRM\\Presentation.css",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "css/CRM/Presentation.css",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\css\\CRM\\Presentation.css"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\css\\CRM\\ViewOne.css",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\css\\CRM\\ViewOne.css",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "css/CRM/ViewOne.css",
       "AssetKind": "All",
@@ -357,10 +357,10 @@
       "OriginalItemSpec": "wwwroot\\css\\CRM\\ViewOne.css"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\css\\User\\UserLogin.css",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\css\\User\\UserLogin.css",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "css/User/UserLogin.css",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\css\\User\\UserLogin.css"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\css\\User\\UserRegister.css",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\css\\User\\UserRegister.css",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "css/User/UserRegister.css",
       "AssetKind": "All",
@@ -391,10 +391,10 @@
       "OriginalItemSpec": "wwwroot\\css\\User\\UserRegister.css"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\favicon.ico",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -408,10 +408,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\images\\Activity\\Email.svg",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\images\\Activity\\Email.svg",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "images/Activity/Email.svg",
       "AssetKind": "All",
@@ -425,10 +425,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Activity\\Email.svg"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\images\\Activity\\Location.png",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\images\\Activity\\Location.png",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "images/Activity/Location.png",
       "AssetKind": "All",
@@ -442,10 +442,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Activity\\Location.png"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\images\\Activity\\Note.png",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\images\\Activity\\Note.png",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "images/Activity/Note.png",
       "AssetKind": "All",
@@ -459,10 +459,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Activity\\Note.png"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\images\\Activity\\PhoneCall.svg",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\images\\Activity\\PhoneCall.svg",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "images/Activity/PhoneCall.svg",
       "AssetKind": "All",
@@ -476,10 +476,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Activity\\PhoneCall.svg"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\images\\Activity\\Presentation.png",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\images\\Activity\\Presentation.png",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "images/Activity/Presentation.png",
       "AssetKind": "All",
@@ -493,10 +493,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Activity\\Presentation.png"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\images\\Activity\\Purchase.png",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\images\\Activity\\Purchase.png",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "images/Activity/Purchase.png",
       "AssetKind": "All",
@@ -510,10 +510,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Activity\\Purchase.png"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\images\\facebookicons.jpg",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\images\\facebookicons.jpg",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "images/facebookicons.jpg",
       "AssetKind": "All",
@@ -527,10 +527,10 @@
       "OriginalItemSpec": "wwwroot\\images\\facebookicons.jpg"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\images\\Geotargeting.jpg",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\images\\Geotargeting.jpg",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "images/Geotargeting.jpg",
       "AssetKind": "All",
@@ -544,10 +544,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Geotargeting.jpg"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\images\\GoogleAdNetwork.png",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\images\\GoogleAdNetwork.png",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "images/GoogleAdNetwork.png",
       "AssetKind": "All",
@@ -561,10 +561,10 @@
       "OriginalItemSpec": "wwwroot\\images\\GoogleAdNetwork.png"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\images\\Industries\\Automotive.jpg",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\images\\Industries\\Automotive.jpg",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "images/Industries/Automotive.jpg",
       "AssetKind": "All",
@@ -578,10 +578,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Industries\\Automotive.jpg"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\images\\Industries\\Entertainment.jpg",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\images\\Industries\\Entertainment.jpg",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "images/Industries/Entertainment.jpg",
       "AssetKind": "All",
@@ -595,10 +595,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Industries\\Entertainment.jpg"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\images\\Industries\\HealthCare.jpg",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\images\\Industries\\HealthCare.jpg",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "images/Industries/HealthCare.jpg",
       "AssetKind": "All",
@@ -612,10 +612,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Industries\\HealthCare.jpg"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\images\\Industries\\Legal.jpg",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\images\\Industries\\Legal.jpg",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "images/Industries/Legal.jpg",
       "AssetKind": "All",
@@ -629,10 +629,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Industries\\Legal.jpg"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\images\\Industries\\Restaurant.jpg",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\images\\Industries\\Restaurant.jpg",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "images/Industries/Restaurant.jpg",
       "AssetKind": "All",
@@ -646,10 +646,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Industries\\Restaurant.jpg"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\images\\Industries\\Sports.jpg",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\images\\Industries\\Sports.jpg",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "images/Industries/Sports.jpg",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Industries\\Sports.jpg"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\js\\ViewOne.js",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\js\\ViewOne.js",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "js/ViewOne.js",
       "AssetKind": "All",
@@ -680,10 +680,10 @@
       "OriginalItemSpec": "wwwroot\\js\\ViewOne.js"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -697,10 +697,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -714,10 +714,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -731,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -748,10 +748,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -765,10 +765,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -782,10 +782,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -799,10 +799,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -816,10 +816,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -833,10 +833,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -850,10 +850,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -867,10 +867,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -884,10 +884,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -901,10 +901,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -918,10 +918,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -935,10 +935,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -952,10 +952,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -969,10 +969,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -986,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -1003,10 +1003,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -1020,10 +1020,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -1037,10 +1037,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -1054,10 +1054,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -1071,10 +1071,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -1088,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -1105,10 +1105,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -1122,10 +1122,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -1139,10 +1139,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -1156,10 +1156,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -1173,10 +1173,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -1190,10 +1190,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -1207,10 +1207,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -1224,10 +1224,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -1241,10 +1241,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -1258,10 +1258,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -1275,10 +1275,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -1292,10 +1292,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -1309,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -1326,10 +1326,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -1343,10 +1343,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -1360,10 +1360,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -1377,10 +1377,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -1394,10 +1394,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -1411,10 +1411,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -1428,10 +1428,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -1445,10 +1445,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -1462,10 +1462,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -1479,10 +1479,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -1496,10 +1496,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -1513,10 +1513,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -1530,10 +1530,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -1547,10 +1547,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -1564,10 +1564,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -1581,10 +1581,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -1598,10 +1598,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -1615,10 +1615,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -1632,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "MyCRM",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
       "BasePath": "_content/MyCRM",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",

@@ -38,7 +38,7 @@ public class NewBusinessForm
     public string Email {get; set;}
 
     [MyDate(ErrorMessage = "must be in the past")]
-    [Display(Name = "Date Started or Acquisition")]
+    [Display(Name = "Date Acquisition")]
     public DateTime? StartDate {get; set;}
 
     [Required(ErrorMessage = "is required")]

@@ -710,11 +710,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\MyCRM.csproj",
+      "projectUniqueName": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\MyCRM.csproj",
       "projectName": "MyCRM",
-      "projectPath": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\MyCRM.csproj",
+      "projectPath": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\MyCRM.csproj",
       "packagesPath": "C:\\Users\\jonat\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\obj\\",
+      "outputPath": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jonat\\AppData\\Roaming\\NuGet\\NuGet.Config"

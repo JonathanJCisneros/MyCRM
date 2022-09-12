@@ -11,16 +11,17 @@
         <link rel="stylesheet" href="~/css/CRM/Dashboard.css" />
         <link rel="stylesheet" href="~/MeetUpCenter.styles.css" asp-append-version="true" />
     </head>
-    <body >
-        <div class="dContainer">
-            <div class="header">
-                <h1 class="dashboardTitle">Welcome, @Context.Session.GetString("Name")</h1>
-                <div>
-                    <a asp-controller="CRM" asp-action="NewBusiness" class="btn btn-outline-primary">Add a Business</a>
-                    <a asp-controller="User" asp-action="Logout" class="btn btn-outline-danger">Log Out</a>
-                </div>
-                
+    <body>
+        <div class="header">
+            <h1 class="dashboardTitle">
+                Welcome, @Context.Session.GetString("Name")
+            </h1>
+            <div>
+                <a asp-controller="CRM" asp-action="NewBusiness" class="btn btn-primary">Add a Business</a>
+                <a asp-controller="User" asp-action="Logout" class="btn btn-danger">Log Out</a>
             </div>
+        </div>
+        <div class="contain">
             <table class="table table-hover">
                 <thead>
                     <tr>

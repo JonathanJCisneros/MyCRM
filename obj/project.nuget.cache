@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EH5WQsNagqQqy2HPgfOlfKBHJuWomr35i2W2Y+vCKuNZw6iL1K8hXb2OvvTC9zWFdZ7z7O63O53mG89MKtPk5A==",
+  "dgSpecHash": "vCq7bOVHiOnFrS6eRE8B7QwQoyrXkCku+GsPbr8e03RH4/EOB/W+dPracqS99uG1Vg3FDe3sfl65RCU2nte/bg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jonat\\OneDrive\\Documents\\Coding Dojo\\Projects\\MyCRM\\MyCRM.csproj",
+  "projectFilePath": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\MyCRM.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jonat\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\jonat\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.3\\microsoft.entityframeworkcore.6.0.3.nupkg.sha512",
