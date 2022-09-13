@@ -96,7 +96,7 @@
                         </div>
                     </div>
                     <div>
-                        <h3 class="BW" ondblclick="edit('WUpdate', 'W')" onmouseout="WBack(this)">Business Website: 
+                        <h3 class="BW" ondblclick="edit('WUpdate', 'W')">Business Website: 
                             @if(ViewBag.oneBusiness.Website == null)
                             {
                                 <span id="W">
@@ -106,10 +106,10 @@
                             else
                             {
                                 <span id="W">
-                                    <a href="https://@ViewBag.oneBusiness.Website" target="_blank">@ViewBag.oneBusiness.Website</a>
+                                    <a href="@ViewBag.oneBusiness.Website" target="_blank">@ViewBag.oneBusiness.Website</a>
                                 </span>
                             }
-                            <span id="WUpdate">
+                            <span id="WUpdate" onmouseout="WBack(this)">
                                 <partial name="_Website"></partial>
                             </span>
                         </h3>
