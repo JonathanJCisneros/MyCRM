@@ -11,8 +11,8 @@
     </head>
     <body>
         <form asp-controller="CRM" asp-action="UpdateBusinessName" asp-route-businessId="@ViewBag.OneBusiness.BusinessId" method="POST" class="BNForm">
-            <input asp-for="BusinessName" class="form-control" value="@ViewBag.OneBusiness.BusinessName" id="BNinput">
-            <button type="submit" class="btn btn-link" id="BNSubmit">Update</button>
+            <input asp-for="BusinessName" class="form-control BNinput" value="@ViewBag.OneBusiness.BusinessName">
+            <button type="submit" class="btn btn-link BNSubmit">Update</button>
         </form>
     </body>
 </html>

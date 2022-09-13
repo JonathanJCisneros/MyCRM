@@ -8,7 +8,7 @@
     align-items: center;
 }
 
-#BNinput{
+.BNinput{
     font-weight: bold;
     font-size: 75px;
     margin-left: 15px;
@@ -19,6 +19,6 @@
     text-align: center;
 }
 
-#BNSubmit{
+.BNSubmit{
     margin-top: 0px;
 }
