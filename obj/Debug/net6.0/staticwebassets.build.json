@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "P0bg+Whm2mkMHLrHS3adFaRHe1bzboXLuRDlmIQLy3c=",
+  "Hash": "jYg9/TbqnddmzEXoz2SLjALga/Y2Imwm5snJQa9STQY=",
   "Source": "MyCRM",
   "BasePath": "_content/MyCRM",
   "Mode": "Default",
@@ -219,23 +219,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\CRM\\_Task.css"
-    },
-    {
-      "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\css\\CRM\\_UpdateBName.css",
-      "SourceId": "MyCRM",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\",
-      "BasePath": "_content/MyCRM",
-      "RelativePath": "css/CRM/_UpdateBName.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\CRM\\_UpdateBName.css"
     },
     {
       "Identity": "C:\\Users\\jonat\\OneDrive\\Documents\\Software Development\\Projects\\MyCRM\\wwwroot\\css\\CRM\\_UpdateI.css",
